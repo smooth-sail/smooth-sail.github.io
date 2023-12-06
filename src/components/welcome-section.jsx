@@ -3,9 +3,9 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "Case Study", href: "#" },
-  { name: "Our Team", href: "#" },
+  { name: "Home", href: "/home" },
+  { name: "Case Study", href: "/case-study" },
+  { name: "Our Team", href: "/team" },
 ];
 
 export default function WelcomeSection() {

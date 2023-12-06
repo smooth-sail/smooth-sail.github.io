@@ -1,19 +1,19 @@
 import { Route, Routes } from "react-router-dom";
-import WelcomeSection from "./components/welcome-section";
-import ProjectScreenShot from "./components/project-screenshot";
-import FeatureGrid from "./components/feature-grid";
-import Team from "./components/team";
+
 import Home from "./components/home";
+import TeamPage from "./components/team-page";
+import CaseStudy from "./components/case-study";
 
 function App() {
   return (
     <>
       <div>
-        <Routes></Routes>
-        <WelcomeSection />
-        <ProjectScreenShot />
-        <FeatureGrid />
-        <Team />
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/case-study" element={<CaseStudy />} />
+          <Route path="/team" element={<TeamPage />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
     </>
   );

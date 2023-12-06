@@ -1,0 +1,1388 @@
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+
+const navigation = [
+  { name: "Home", href: "/home" },
+  { name: "Case Study", href: "/case-study" },
+  { name: "Our Team", href: "/team" },
+];
+
+export default function CaseStudy() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  return (
+    <div>
+      <div className="bg-white">
+        <header className="absolute inset-x-0 top-0 z-50">
+          <nav
+            className="flex items-center justify-between p-6 lg:px-8"
+            aria-label="Global"
+          >
+            <div className="flex lg:flex-1">
+              <a href="#" className="-m-1.5 p-1.5">
+                <span className="sr-only">Your Company</span>
+                <img
+                  className="h-8 w-auto"
+                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div className="flex lg:hidden">
+              <button
+                type="button"
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                onClick={() => setMobileMenuOpen(true)}
+              >
+                <span className="sr-only">Open main menu</span>
+                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              </button>
+            </div>
+            <div className="hidden lg:flex lg:gap-x-12">
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-sm font-semibold leading-6 text-gray-900"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+              <a
+                href="#"
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                Log in <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </nav>
+          <Dialog
+            as="div"
+            className="lg:hidden"
+            open={mobileMenuOpen}
+            onClose={setMobileMenuOpen}
+          >
+            <div className="fixed inset-0 z-50" />
+            <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div className="flex items-center justify-between">
+                <a href="#" className="-m-1.5 p-1.5">
+                  <span className="sr-only">Your Company</span>
+                  <img
+                    className="h-8 w-auto"
+                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    alt=""
+                  />
+                </a>
+                <button
+                  type="button"
+                  className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <span className="sr-only">Close menu</span>
+                  <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                </button>
+              </div>
+              <div className="mt-6 flow-root">
+                <div className="-my-6 divide-y divide-gray-500/10">
+                  <div className="space-y-2 py-6">
+                    {navigation.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                  <div className="py-6">
+                    <a
+                      href="#"
+                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Dialog.Panel>
+          </Dialog>
+        </header>
+
+        <div className="relative isolate px-6 pt-14 lg:px-8">
+          <div
+            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+            aria-hidden="true"
+          >
+            <div
+              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+              style={{
+                clipPath:
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+              }}
+            />
+          </div>
+          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+              <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                Announcing our next round of funding.{" "}
+                <a href="#" className="font-semibold text-indigo-600">
+                  <span className="absolute inset-0" aria-hidden="true" />
+                  Read more <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div className="text-center">
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                Data to enrich your online business
+              </h1>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+                fugiat aliqua.
+              </p>
+              <div className="mt-10 flex items-center justify-center gap-x-6">
+                <a
+                  href="#"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Get started
+                </a>
+                <a
+                  href="#"
+                  className="text-sm font-semibold leading-6 text-gray-900"
+                >
+                  Learn more <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+            aria-hidden="true"
+          >
+            <div
+              className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+              style={{
+                clipPath:
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+              }}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <h3 className="text-base font-semibold leading-6 text-gray-900">
+          Introduction
+        </h3>
+        <hr />
+        <p>
+          SmoothSail is a self-hosted, open-source feature flag tool designed
+          for small companies aiming for rapid feature development with
+          minimized risks. It empowers developers to separate the release of new
+          features from their deployment and quickly revert unsuccessful updates
+          with just a click. SmoothSail provides accurate user targeting
+          capabilities, enabling engineers to introduce new features to specific
+          demographics and limit the impact of unforeseen bugs in production.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/intro1.png"
+            alt="intro"
+            className="smoothsail-images"
+          />
+        </p>
+        <hr />
+        <h3>Deployment and Release</h3>
+        <h4>Feature Deployment and Release</h4>
+        <p>
+          Many companies seek to iterate rapidly on their products. They strive
+          to introduce and enhance new features within their software systems
+          while eliminating those that may impede application performance under
+          heavy loads or due to unexpected bugs. Traditionally, introducing new
+          features involves deploying a fresh application version and releasing
+          it to users simultaneously.
+        </p>
+        <p>
+          Despite frequently occurring in tandem, it’s important to note that
+          deployment and release are distinct concepts. Deployment encompasses
+          the installation of a different software version into a production
+          environment. In other words, deployment involves transferring and
+          configuring software files to the appropriate servers, ensuring all
+          dependencies are satisfied and the application is ready for use.
+          Release, on the other hand, is a process of making a part of the
+          system (a feature) or a system as a whole available to the users.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/featureDeployAndRelease.png"
+            alt="featureDeployAndRelease"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          Conventionally, deployment and release schedules are tightly coupled
+          together. The major disadvantages of this approach are the layer of
+          complexity and inherent risk that can significantly impact the
+          development lifecycle. For example, any delay, error, or complication
+          in either deployment or release might delay future deployments.
+          Furthermore, in a traditional software lifecycle, several features may
+          be bundled and released together during the deployment. If one of
+          those features is problematic, all features will have to be rolled
+          back. These production rollbacks can be lengthy and complex.
+          Therefore, a strong coupling of deployment and release processes can
+          impede an engineering team’s ability to swiftly address critical bug
+          fixes, disrupting the established business schedule.
+        </p>
+        <hr />
+        <h4>Feature Release Strategies</h4>
+        <p>
+          Two common strategies for decoupling deployment and release are
+          <i>canary</i> and <i>blue-green</i> deployments.
+        </p>
+        <p>
+          A classic <i>canary deployment</i> is performed at the infrastructure
+          level with two production environments and a load balancer. All users
+          access the software's stable (old) version during the first phase of a
+          canary deployment. The newer version (canary) is then deployed to a
+          second production environment. Two different versions of the
+          application are running simultaneously. The load balancer can
+          incrementally direct user traffic to the new software version if
+          everything goes well. If the canary suffers significant issues, the
+          load balancer can redirect the traffic back to the stable version of
+          the application. <a href="#">REF</a>
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/canary.png"
+            alt="canary"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          The <i>blue-green</i> deployment strategy maintains two separate
+          production environments as well. One environment contains the current
+          version (blue), while the other contains the new version (green). When
+          the green environment is enabled, the load balancer shifts production
+          traffic to the new application version all at once. The blue
+          environment can stand by in case rollback is required.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/blue-green.png"
+            alt="blue-green"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          Both of these approaches allow the developers to separate the
+          deployment and release process by maintaining two sets of
+          infrastructure, simplifying the rollback to the stable version of the
+          application. Developers deploy the new version of their application
+          without automatically releasing the feature to the user base. Then,
+          they release the new feature in a controlled manner by shifting user
+          traffic from the stable version to the newly deployed one.
+        </p>
+        <p>Unfortunately, these approaches come with limitations:</p>
+        <ul>
+          <li>
+            <strong>Resource intensive:</strong> maintaining additional
+            infrastructure can be costly;
+          </li>
+          <li>
+            <strong>Complex:</strong> managing two environments adds complexity
+            to the infrastructure and deployment process;
+          </li>
+          <li>
+            <strong>User impact:</strong> developers use an all-or-nothing
+            approach with blue-green deployment so that all application users
+            will encounter any bugs. The canary deployment strategy minimizes
+            the potential impact on the user base, but any bugs will still need
+            redeployment or a hotfix.
+          </li>
+        </ul>
+        <p>
+          Fortunately, there is a way to achieve the benefits that canary and
+          blue-green offer while minimizing complexity and reducing the number
+          of users impacted by unforeseen bugs in production code. This approach
+          is called <strong>feature flags.</strong>
+        </p>
+        <hr />
+        <h3>Decoupling Feature Deployment and Release: Feature Flags</h3>
+        <h4>What is a Feature Flag?</h4>
+        <p>
+          Engineering teams often seek precise control over deploying and
+          releasing new features while minimizing associated costs. They aim to
+          deploy a new application version independently without maintaining two
+          separate production environments
+          <a href="#">REF</a>. To attain this goal, developers can utilize a
+          strategy called feature flags.
+        </p>
+        <p>
+          In its simplest form, a feature flag determines which code section is
+          executed during runtime, appearing in conditionals that dictate the
+          code path to be taken:
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/evaluateFlagLaptopCode.png"
+            alt="evaluateFlagLaptopCode"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          This technique empowers developers to deploy a new application version
+          while hiding recently added features behind flags on the frontend,
+          backend, or both. It allows the release of new features to be
+          completely detached from deployment decisions.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/deploy-to-release.gif"
+            className="smoothsail-images"
+          />
+        </p>
+        <hr />
+        <h4>Advantages of using Feature Flags</h4>
+        <p>
+          The popularity of feature flags in software development is attributed
+          to the benefits they offer engineers. Feature flags provide:
+        </p>
+        <ul>
+          <li>
+            <strong>Fine-grained control</strong>: Engineers can precisely
+            determine <strong>when</strong> and <strong>to whom</strong> a new
+            feature is released. This flexibility allows the company to make
+            features available when it is ready instead of when the new code is
+            deployed. The release can target specific audiences, such as company
+            employees or beta-testers, rather than the entire user base.
+          </li>
+          <li>
+            <strong>Fast rollback</strong>: Disabling problematic features is
+            simplified to a toggle switch, eliminating the need to roll back the
+            entire release through redeployment.
+          </li>
+          <li>
+            <strong>Simplicity of feature release</strong>: No need for two
+            production environments and complex coordination with the DevOps or
+            Operations team.
+          </li>
+          <li>
+            <strong>Gentle learning curve</strong>: Feature flags are easy to
+            adopt, minimizing the learning curve for engineers.
+          </li>
+          <li>
+            <strong>Testing in production</strong>: Testing is an essential part
+            of any software lifecycle. However, testing and staging environments
+            have their limitations <a href="#">REF</a> :
+            <ul>
+              <li>
+                Replicating live, real-world systems in a testing or staging
+                environment is difficult, if not impossible (e.g., assessing or
+                monitoring the reliability and stability of a service over
+                time);
+              </li>
+              <li>
+                Simulated data or a subset of real data might not represent the
+                user population, which makes replication of the true user
+                population challenging;
+              </li>
+              <li>
+                Resource availability (e.g., time, budget, availability of
+                skilled specialists) limits what a company can achieve during
+                the software testing stage.
+              </li>
+            </ul>
+            <p>
+              Meanwhile, feature flags enable efficient and cost-effective
+              testing in a live environment. They allow for targeted testing
+              based on user attributes and quick feature rollbacks in case of
+              bugs. Moreover, feature flags play an instrumental role in A/B
+              testing, providing the flexibility to selectively expose users to
+              different variations and measure the impact of changes, ultimately
+              aiding in data-driven decision-making.
+            </p>
+          </li>
+        </ul>
+        <p>
+          While feature flags come with trade-offs, such as the potential
+          accumulation of dead code and old tests in the repository once a flag
+          is no longer in use (technical debt)<a href="#">REF</a>, they remain a
+          valuable tool. Feature flags facilitate rapid testing and iteration of
+          new features in a live environment, accelerating the development cycle
+          and reducing the time required to bring new features to market.
+          <a href="#">REF</a>
+          <a href="#">REF</a>.
+        </p>
+        <hr />
+        <h4>User targeting with Feature Flags</h4>
+        <p>
+          Using feature flags is instrumental for decoupling deployment and
+          release in the software development cycle. However, if used simply as
+          a toggle, the "ON" state releases the new feature to all users, making
+          swift rollbacks possible but exposing the entire user base to any
+          repercussions.
+        </p>
+        <p className="smoothsail-images-container">
+          <img src="images/release-to-all.gif" className="smoothsail-images" />
+        </p>
+        <p>
+          Fortunately, as mentioned earlier, feature flags can provide
+          user-targeting capabilities. To mitigate potential damage, developers
+          can introduce the feature to a limited subset of users using two
+          primary strategies: random user selection or targeting users based on
+          specific characteristics.
+        </p>
+        <p>
+          Opting for random user assignment broadens the exposure to new
+          features, helping identify additional edge cases for a more
+          comprehensive testing process. However, this approach risks exposing
+          potential bugs to users who may not tolerate glitches, potentially
+          leading to customer loss and reputation damage.
+        </p>
+        <p>
+          An alternative to random user selection is selectively targeting users
+          based on <strong>user context</strong>. A user context is an object
+          composed of attribute-value pairs that provide relevant information
+          about a user. While this approach reduces the diversity of selected
+          users, it also minimizes risks associated with feature releases.
+          Introducing the new feature to a user group familiar with potential
+          issues and willing to confront related risks may be prudent for
+          companies concerned about the reputational and financial consequences
+          of new feature releases.
+        </p>
+        <p>gif for feature turned on for targeted user segments</p>
+        <p>
+          In addition, as an extension to releasing a new feature to a small
+          group of early adopters, developers can leverage feature flags to roll
+          out features following the ring deployment model
+          <a href="#">REF</a>. In this approach, developers define multiple
+          cohorts of users, referred to as "rings," each with an ever-increasing
+          impact. The team then initiates the feature release, starting from the
+          innermost ring and progressing outward. Using one feature flag,
+          developers can sequentially add sets of targeting rules (aka,
+          segments) and gradually expand the audience for the new feature.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/ring-deploy.png"
+            alt="ring-deploy"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          For example, the feature might initially be rolled out exclusively to
+          the company's employees (internal users). Subsequently, a new segment,
+          defined by user context targeting rules, is added to the flag,
+          extending the release to external early adopters (beta testers). This
+          iterative process continues, gradually reaching the broader user base.
+          The release of features via “rings” seamlessly aligns with the purpose
+          of feature flags, emphasizing a strategic and controlled separation of
+          deployment from feature rollout and allowing for in-production
+          testing, mitigating the risks of exposing potentially buggy features
+          to the wrong demographics.
+        </p>
+        <hr />
+        <h4>Feature Flag Providers</h4>
+        <p>
+          Teams exploring the implementation of feature flags for decoupling
+          deployment and release processes have a range of potential solutions
+          at their disposal. They can opt for existing commercial solutions or
+          pursue developing and creating the desired solution themselves.
+        </p>
+        <p>
+          In the realm of commercial solutions, three prominent players are
+          Optimizely, LaunchDarkly, and DevCycle. All three providers boast
+          user-friendly setups and rich features, such as support for client-
+          and server-side feature flag use, diverse user targeting capabilities
+          (random and specific demographic targeting), various rollout
+          strategies (percentage increase, ring rollout, hybrid), A/B testing,
+          and feature flag metrics tracking.
+        </p>
+        <p>
+          However, despite their advantages, commercial solutions come with
+          their share of drawbacks. For instance, LaunchDarkly and DevCycle lack
+          support for self-hosting, and Optimizely's self-hosting options are
+          limited. This constraint may prove unsuitable for companies dealing
+          with strictly regulated sensitive data. Another drawback is that
+          Optimizely and LaunchDarkly are not open-source, meaning users
+          encountering issues must rely on the respective companies for
+          resolution. Additionally, any desire for custom changes to the feature
+          flag tool may require waiting or be deemed impossible.
+        </p>
+        <p>
+          In cases where existing solutions prove unsustainable, engineering
+          teams might find themselves compelled to create their own feature flag
+          management system. While customizable, the “DIY” option may require
+          significant resources, potentially making this path less appealing or
+          even unfeasible.
+        </p>
+        <hr />
+        <h3>SmoothSail</h3>
+        <p>
+          SmoothSail is a self-hosted, open-source feature flag software that
+          enables developer teams to release new features independently of
+          deployment. It allows engineers to roll out features to specific user
+          audiences based on user context and roll back unsuccessful features
+          with the toggle of a flag.
+        </p>
+        <p>
+          SmoothSail fills the niche of having the fully customizable experience
+          of DIY while having the ease of setup of commercial providers. It is
+          worth noting that, unlike other providers, SmoothSail does not have
+          rich functionality. It is crafted for companies prioritizing exact
+          control over server-side-only feature rollout to specific user
+          demographics. SmoothSail grants its users a comprehensive oversight of
+          both the application and feature flag data, providing a tailored
+          solution for efficient feature flag management.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/comparisonchart.png"
+            alt="comparisonchart"
+            className="smoothsail-images"
+          />
+        </p>
+        <hr />
+        <h3>Architecture</h3>
+        <p>
+          We designed SmoothSail with reliability and consistency in mind. It
+          was essential to ensure that when a user changes a feature flag, this
+          change is immediately reflected in the consumer application.
+          Therefore, the SmoothSail architecture consists of four major parts:
+        </p>
+        <ul>
+          <li>
+            The <strong>Manager Platform</strong> handles flag data. It is also
+            responsible for performing authentication and managing SDK keys.
+          </li>
+          <li>
+            The <strong>SDK Service</strong> establishes and maintains
+            Server-Sent Events (SSE) connections with authenticated SDKs.
+          </li>
+          <li>
+            <strong>NATS JetStream</strong> facilitates reliable communication
+            between the Manager and SDK Service.
+          </li>
+          <li>
+            The <strong>Software Development Kit (SDK)</strong> (software
+            package) is used in the developer’s backend application and
+            responsible for connecting to the SDK Service. SDK is also
+            responsible for evaluating flag data for any user context the
+            developer decides to pass in
+          </li>
+        </ul>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/Architecture.png"
+            alt="architecture"
+            className="smoothsail-images"
+          />
+        </p>
+        <hr />
+        <h4>Manager Platform</h4>
+        <p>
+          The core responsibility of SmoothSail's Manager Platform is to manage
+          flag data, SDK keys, and execute SDK authentication. It comprises the
+          dashboard user interface, the Manager server, and a PostgreSQL
+          database.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/manager-platform.png"
+            alt="manager-platform"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          The <strong>dashboard</strong> is the primary entry point for
+          developers overseeing feature flags. This front-end application is
+          built on React and allows users to view, create, update, and delete
+          feature flag data. The dashboard is also where users can find their
+          SDK key or regenerate the SDK key if it’s compromised.
+        </p>
+        <p>
+          The <strong>Manager server</strong>, an Express application powered by
+          Node.js, handles a range of responsibilities:
+        </p>
+        <ul>
+          <li>
+            Statically <strong>serves the React app</strong> for the dashboard;
+          </li>
+          <li>
+            <strong>Manages SDK keys</strong> for authentication;
+          </li>
+          <li>
+            <strong>Performs authentication</strong> for SDK consumer app before
+            allowing the SDK to establish an SSE connection with the SDK
+            Service;
+          </li>
+          <li>
+            Executes all <strong>CRUD database operations</strong> through the
+            use of an ORM;
+          </li>
+          <li>
+            <strong>Handles communication of flag data</strong> to the SDK
+            Service by publishing messages through NATS JetStream;
+          </li>
+        </ul>
+        <p>
+          We used a PostgreSQL database for persistent storage of flag-related
+          data. We chose the SQL database because our data is highly structured.
+          Furthermore, our emphasis on reliability mandated selecting an
+          ACID-compliant database to ensure the steadfastness and integrity of
+          our system.
+        </p>
+        <hr />
+        <h4>SDK Service</h4>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/sdk-service.png"
+            alt="sdk-service"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          The SDK Service, a backend application built on Node.js Express, is an
+          intermediary between SmoothSail's Manager and the SDKs. Its primary
+          responsibilities include:
+        </p>
+        <ul>
+          <li>
+            Establishing and maintaining
+            <strong>persistent connections</strong> with authenticated SDKs;
+          </li>
+          <li>
+            Guaranteeing accurate real-time
+            <strong>feature flag data delivery</strong> to SDKs
+          </li>
+          <li>
+            <strong>Serving as a proxy</strong> to facilitate communication
+            between the Manager and the SDKs.
+          </li>
+        </ul>
+        <p>
+          Immediately following initialization, the SDK Service requests feature
+          flag data from the Manager server. The Manager Server then transmits
+          subsequent flag updates to the SDK Service via the
+          publisher-subscriber pattern.
+        </p>
+        <p>
+          Upon initializing a new SDK in a client application, the SDK sends the
+          SDK Key as an encrypted value in the Authorization header of an HTTP
+          request to the SDK Service. In response, the SDK Service forwards the
+          SDK Key to the Manager for authentication. Based on the Manager's
+          validation, the SDK Service either establishes the SSE connection or
+          denies the request.
+        </p>
+        <p>
+          Once the connection is established, the SDK Service transmits all
+          feature flag data to the SDK. The SDK Service dispatches heartbeat
+          messages at predetermined intervals to identify stale SSE connections.
+        </p>
+        <p>
+          The SDK Service manages the flag data within an in-memory cache. In
+          the event of a flag update, the Manager server sends an update
+          notification to the SDK Service, prompting the update of its cache and
+          the transmission of the latest feature flag data to all connected
+          SDKs.
+        </p>
+        <p className="smoothsail-images-container">
+          Gif for the steps of authentication
+        </p>
+        <p>
+          If SmoothSail users invalidate the current SDK key, the SDK Service
+          promptly terminates all open SSE connections, forcing all SDKs to
+          re-authenticate. To mitigate malicious connection attempts, we’ve
+          incorporated a configurable rate limit for the SDK Service, which
+          users can adjust based on their preferences (defaults to 10 requests
+          per second).
+        </p>
+        <hr />
+        <h4>NATS JetStream</h4>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/nats-jetstream.png"
+            alt="nats-jetstream"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          To establish a robust communication channel between the Manager server
+          and the SDK Service, our team chose NATS JetStream. NATS is a
+          lightweight, high-performance messaging system that serves as a
+          publish-subscribe and request-reply message broker, facilitating
+          communication between distributed systems. JetStream is NATS’s
+          built–in persistence layer that provides additional functionalities
+          such as at-least-once and exactly-once message delivery guarantees.
+        </p>
+        <p>
+          Ensuring the reliable delivery of data between the Manager server and
+          the SDK Service, we implemented NATS JetStream's "at least once"
+          message delivery guarantee for all communication, configuring
+          applications to acknowledge the receipt of the message.
+        </p>
+        <p>
+          The SDK Service employs the NATS request-reply messaging pattern to
+          retrieve initial complete flag data and SDK Key authentication. This
+          communication method ensures that the requester (the SDK Service)
+          awaits a response from the responder (the Manager server),
+          facilitating a direct and reliable exchange of information.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/REQUEST-REPLY.png"
+            alt="request-reply"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          The Manager server utilizes the broker’s publisher-subscriber
+          mechanism to broadcast notifications regarding flag updates to the SDK
+          Service. The SDK Service subscribes to feature flag updates upon
+          startup, acting as a subscriber. The Manager, designated as a
+          publisher, relays information to the SDK Service. As SmoothSail is a
+          self-hosted application, developers can scale the SDK Service
+          horizontally in case of heavy load. In this scenario, the pub/sub
+          communication channel will automatically scale with it. No additional
+          configuration is required.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/pubsub.png"
+            alt="pub-sub"
+            className="smoothsail-images"
+          />
+        </p>
+        <hr />
+        <h4>Software Development Kit (SDK)</h4>
+        <p>
+          The Node.js server-side SDK is designed to be embedded in the backend
+          of feature flag-consuming applications. Its core responsibilities
+          include authentication, maintaining real-time feature flag data, and
+          flag evaluation during runtime.
+        </p>
+        <p className="smoothsail-images-container">
+          <img src="images/sdk.png" alt="sdk" className="smoothsail-images" />
+        </p>
+        <p>
+          Authenticating a new SDK mandates a valid SDK Key and the SDK Service
+          authentication URL. Developers can retrieve the current key or
+          generate a new one using the SmoothSail UI. For enhanced security, the
+          SDK encrypts the key before storing it in memory and transmitting it
+          to the SDK Service as part of the authentication process. In the event
+          of an invalid key or authentication URL, the SDK logs an error, starts
+          serving flag default values, and refrains from further attempts at
+          establishing an SSE connection.
+        </p>
+        <p>
+          After successful authentication, the SDK receives the complete feature
+          flag ruleset via the SSE connection. The connection is then kept alive
+          for real-time notifications about changes on the feature flag manager
+          platform. If a flag is changed, the SDK Service retransmits the
+          complete feature flag information to the connected SDK, allowing it to
+          update its in-memory information. Until the SDK receives the initial
+          feature flag ruleset, all flags default to either a generic `false`
+          value or the user-defined default value (if specified).
+        </p>
+        <p>
+          As mentioned earlier, we incorporated a heartbeat mechanism to prevent
+          stale connections. If at least one heartbeat message is lost, the SDK
+          assumes the SSE connection is stale. Consequently, the SDK closes the
+          stale connection and initiates a new attempt to establish a fresh one.
+          Once successful, the SDK Service will resend the latest flag data to
+          ensure any missed updates do not adversely affect the user's
+          application. Users can adjust the heartbeat interval to suit their
+          specific needs. It is noteworthy that since we prioritize consistency
+          over availability in SmoothSail, SDK serves default feature flag
+          values during the reconnection attempts, adopting a conservative
+          approach to feature flag delivery in the event of SSE connection
+          malfunction.
+        </p>
+        <hr />
+        <h4>Flag Evaluation</h4>
+        <p>
+          The SDK, embedded within a feature flag consumer application, provides
+          the logic for evaluating flags. This design facilitates swift runtime
+          assessment of user context and the flag ruleset, eliminating the need
+          for additional requests to the SDK Service.
+        </p>
+        <p>
+          The SDK accepts three input arguments to execute flag evaluation: user
+          context, feature flag key, and a default flag value. The default value
+          is a fallback if the feature flag is nonexistent or the SDK
+          authentication key is invalidated. The generic default, `false`, is
+          utilized if no default value is provided.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/code-snippet.png"
+            alt="code-snippet"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          When a feature rollout doesn't specifically target a subset of users,
+          the flag remains unassociated with any segments, functioning as a
+          straightforward toggle that turns on or off the feature for the entire
+          user base. Conversely, if a flag is linked to at least one user
+          segment, the user context is evaluated against each segment's user
+          targeting conditions (aka segment rules). If the user aligns with the
+          criteria of any segment, the flag evaluates to `true`; otherwise, it
+          evaluates to `false`.
+        </p>
+        <p>
+          Segments may encompass multiple rules. For example, a segment may
+          require a user to be a beta-tester and an internal employee. Within a
+          segment, the segment operator (either `all` or `any`) will dictate how
+          the SDK will evaluate segment-associated rules. Under the `all`
+          operator, every rule within a segment must be satisfied for the user
+          to be placed within this segment and the flag to evaluate to `true`.
+          In contrast, at least one rule must be fulfilled under the 'any'
+          operator.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/flag-eval.png"
+            alt="flag-eval"
+            className="smoothsail-images"
+          />
+        </p>
+        <hr />
+        <h3>Engineering Decisions</h3>
+        <h4>
+          Communication between the Manager Server and the PostgresSQL database
+        </h4>
+        <p>
+          We integrated the Manager application with the PostgreSQL database
+          using an ORM library.
+        </p>
+        <p className="smoothsail-images-container">
+          <img src="images/orm.png" alt="orm" className="smoothsail-images" />
+        </p>
+        <p>
+          As we do not expect our application to handle heavy database loads,
+          the potential performance overhead of the ORM library isn't a concern.
+          On the flip side, adopting the ORM library simplified the
+          implementation of the following:
+        </p>
+        <ul>
+          <li>
+            <strong>Transaction Atomicity:</strong> Ensuring the atomicity of
+            multiple transactions through the ORM's built-in transaction
+            management mechanism.
+          </li>
+          <li>
+            <strong>Security Enhancement:</strong> Conducting extensive user
+            input validation and fortifying protection against SQL injection
+            attacks.
+          </li>
+          <li>
+            <strong>Readability and Maintainability:</strong> Streamlining
+            collaboration within the development team by abstracting complex
+            database interactions, reducing the need for cumbersome boilerplate
+            code.
+          </li>
+        </ul>
+        <hr />
+        <h4>Splitting the Backend into SDK Service and Manager Application</h4>
+        <p>
+          Initially, SmoothSail's architecture comprised the Manager
+          application, user interface, database, and SDKs, burdening the Manager
+          app with multiple responsibilities:
+        </p>
+        <ul>
+          <li>Handling feature flag CRUD operations;</li>
+          <li>Serving the dashboard;</li>
+          <li>Authenticating SDK;</li>
+          <li>Managing SSE connections with authenticated SDKs;</li>
+          <li>Ensuring accurate feature flag data delivery to the SDKs.</li>
+        </ul>
+        <p>
+          This initial setup risked a single point of failure, where Manager
+          downtime could compromise the entire feature flag system. Moreover,
+          the server's complexity was undergoing substantial growth. We opted to
+          delegate some of the Manager's responsibilities to the SDK Service to
+          enhance system robustness.
+        </p>
+        <p>
+          The introduction of two servers, the Manager server and SDK Service,
+          provides several key advantages:
+        </p>
+        <ul>
+          <li>
+            <strong>Ease of scaling:</strong> With the growing number of
+            connected SDKs, the SDK Service can be scaled independently,
+            eliminating the need to scale the Manager server. The Manager
+            server, primarily responsible for managing feature flag data, is not
+            expected to require scaling.
+          </li>
+          <li>
+            <strong>Reduce Manager server load:</strong> The task of keeping and
+            updating in-memory flag data is offloaded from the Manager server to
+            the SDK Service;
+          </li>
+          <li>
+            <strong>Improved security:</strong> Serving as a proxy to the
+            Manager server, the SDK Service decouples flag management API
+            endpoints from SDK authentication endpoints. This segregation
+            facilitates the implementation of distinct security levels for the
+            feature flag Management platform and the SDK Service. Moreover, the
+            SDK Service does not have direct access to the database, which
+            mitigates the risk of potential threats and reduces the exposure of
+            feature flag data;
+          </li>
+          <li>
+            <strong>Reliability:</strong> In the event of Manager or NATS
+            JetStream downtime, the SSE connection persists between the SDK and
+            the SDK Service.
+          </li>
+        </ul>
+        <p>
+          We recognize that this decision has its flaws: instead of managing a
+          single Manager server, we now have two applications to oversee and
+          ensure reliable communication. However, we believe that the advantages
+          gained significantly outweigh the associated drawbacks.
+        </p>
+        <hr />
+        <h4>Communication between the SDK Service and the Manager platform</h4>
+        <p>
+          With the primary focus on the reliability and consistency of
+          SmoothSail, our choice of a communication mode between the Manager
+          server and the SDK Service was driven by the following criteria:
+        </p>
+        <ul>
+          <li>
+            <strong>Reliability:</strong> The communication channel had to be
+            highly reliable;
+          </li>
+          <li>
+            <strong>Two-way communication support:</strong> On one hand, the
+            Manager server should be able to send flag notifications to the SDK
+            Service. On the other hand, the SDK Service should be able to
+            request complete feature flag ruleset on startup and new SDK
+            authentication validation;
+          </li>
+          <li>
+            <strong>Scalability:</strong> It should be able to scale together
+            with the SDK Service without requiring additional configuration.
+          </li>
+        </ul>
+        <p>
+          Given these stringent requirements, our choice converged on a message
+          broker.
+        </p>
+        <p>
+          To ensure the reliability of communication between the Manager server
+          and the SDK Service, we carefully evaluated the different levels of
+          assurance in message delivery:
+        </p>
+        <ul>
+          <li>
+            At most once: the message may or may not be delivered, but the
+            message will never be delivered more than once;
+          </li>
+          <li>
+            At least once: the message may be delivered multiple times, but it
+            is guaranteed to be received at least once;
+          </li>
+          <li>Exactly once: the message is delivered once and only once.</li>
+        </ul>
+        <p>
+          Considering the inadequacy of reliability with “at most once” and the
+          additional overhead associated with "exactly once" delivery, we opted
+          for "at least once" delivery for our specific use case.
+        </p>
+        <p>
+          Our team evaluated two message broker candidates that supported "at
+          least once" message delivery: NATS JetStream and RabbitMQ. Several
+          factors influenced the decision to choose NATS JetStream. First, NATS
+          had lower latency specifications (p99 latency: 22.1ms) compared to
+          RabbitMQ (p99 latency: 344ms) [ref]. Second, while RabbitMQ offered
+          rich functionality, much of it would remain unused, creating
+          unnecessary overhead for our application. Third, we found NATS easier
+          to configure.
+        </p>
+        <p>
+          Other options considered for the Manager server - SDK service
+          communication channel implementation were:
+        </p>
+        <ul>
+          <li>HTTP requests</li>
+          <li> SSE</li>
+          <li> Polling</li>
+          <li> Webhooks</li>
+          <li> WebSockets</li>
+        </ul>
+        <p>
+          Unfortunately, the first four provided only one-way communication
+          capabilities. While WebSockets offered persistent two-way connections,
+          its implementation would strain the Manager server due to its
+          resource-intensive implementation.
+        </p>
+        <hr />
+        <h4>SSE streaming: whole feature flag ruleset vs. updates only</h4>
+        <p>
+          Because we created our SDK for server-side use, it is less exposed to
+          malicious agents than client-side SDKs. This deliberate choice allows
+          us to implement SmoothSail by storing the complete feature flag
+          ruleset directly on the SDK, enabling flag evaluation within the SDK.
+          This approach eliminates the need to send requests to the SDK Service
+          for every flag evaluation, minimizing latency and reducing the load on
+          the SDK Service. However, the SDK must stay current with any ongoing
+          changes to the flag data.
+        </p>
+        <p>
+          In determining the optimal method for sending feature flag updates via
+          the SSE channel, we carefully considered sending the entire feature
+          flag ruleset or just the updates. We opted for the former: whenever
+          changes occur to the flag data, SmoothSail SDK Service promptly
+          re-sends the complete flag ruleset to the SDK.
+        </p>
+        <p>
+          This choice mitigates the risk of serving outdated feature flag data
+          in scenarios where messages regarding flag updates may fail to reach
+          the SDK due to network issues. We reduce the likelihood of SDKs
+          delivering stale information by consistently re-sending the complete
+          flag ruleset with each change.
+        </p>
+        <p>
+          Furthermore, this approach facilitates simplicity in the communication
+          code on both ends. The SDK merely needs to receive flag data without
+          the complexity of handling different types of notifications, each
+          representing every type of CRUD operation that might occur for the
+          feature flag data. This simplicity ensures the SDK remains lightweight
+          and minimizes the surface area for potential vulnerabilities and bugs.
+        </p>
+        <p>
+          To assess the potential impact of increased message size on bandwidth,
+          we designed a test flag data set with 10 flags, each targeting a
+          distinct segment with two rules. In this scenario, the SDK service
+          transmitted a modest 3.5 KB message to a single SDK. Even at the
+          advised maximum rate of 500 requests/second (see “Load testing”
+          section), the expected impact of 1.7 MB/s is still comfortably within
+          modern networks' capabilities. For significantly larger feature flag
+          rulesets, developers can leverage SmoothSail's open-source nature to
+          implement message compression logic, optimizing data transmission if
+          needed.
+        </p>
+        <p>
+          Although sending the complete feature flag ruleset every time a flag
+          change occurs might increase message size, the trade-off is acceptable
+          for SmoothSail's use case. We anticipate that a small engineering team
+          will employ only a limited number of active feature flags for feature
+          rollouts at any time.
+        </p>
+
+        <hr />
+        <h4>Communication between the SDK Service and SDK</h4>
+        <p>
+          The design of SmoothSail necessitated a dependable one-way live
+          communication channel between the SDK Service and SDK for the delivery
+          of the latest flag data. After careful consideration, our team opted
+          for SSE for several compelling reasons. SSE proved user-friendly,
+          featuring built-in support for re-establishing connections, and its
+          implementation didn't demand additional dependencies. SSE required
+          minimal HTTP traffic (compared to alternative options) and seamlessly
+          scaled alongside the SDK Service. To mitigate potential issues with
+          stale connections, we implemented a heartbeat signal.
+        </p>
+        <p>
+          Other options explored for the SDK Service - SDK communication
+          included WebSockets, polling, and a Message broker.
+        </p>
+        <p>
+          WebSockets offer notable advantages such as scalability and a diverse
+          range of external libraries for implementation. Unfortunately,
+          WebSockets lack native automatic reconnection support. While external
+          libraries can address this issue, this would result in additional
+          dependencies and inflated SDK size. Furthermore, the bidirectional
+          nature of WebSockets would introduce an unnecessary overhead for a
+          one-way SDK Service - SDK connection.
+        </p>
+        <p>
+          On the other hand, polling is a straightforward process, and its
+          implementation does not require external dependencies. The polling
+          frequency can be user-configurable. However, the polling interval
+          (time between two poll requests) inevitably introduces an undesirable
+          delay between the change of the flag data and the SDK receiving the
+          notification. Additionally, given the infrequent changes in flag data,
+          most poll requests would be wasteful, placing unnecessary strain on
+          the SDK Service.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/sse-polling-ws.png"
+            alt="sse-polling-ws"
+            className="smoothsail-images"
+          />
+        </p>
+        <hr />
+        <h3>Load Testing</h3>
+        <p>
+          Our team set out to identify the performance threshold where
+          SmoothSail starts to show signs of decline as the user load increases.
+          This insight was crucial for providing recommendations on optimizing
+          the application's future use.
+        </p>
+        <p>
+          To conduct a comprehensive assessment, we utilized Artillery.io for
+          SmoothSail load testing. We used an SDK Service RESTful endpoint to
+          set up the conditions for our load tests. This endpoint authenticated
+          requests and transmitted data for 10 feature flags upon successful
+          validation. Despite our initial assumption that 10 requests/second
+          (req/s) was reasonable for our use case and expected user numbers, we
+          deliberately pushed the limits by significantly increasing the req/s
+          to identify potential performance bottlenecks.
+        </p>
+        <p>
+          The load test unfolded in three phases. The initial phase started at 1
+          req/s, gradually escalating to 10 req/s within 60 seconds. The second
+          phase sustained the load at 10 req/s and further ramped up to 100
+          req/s over 60 seconds. The final phase maintained a load of 100 req/s
+          and peaked at 1000 req/s.
+        </p>
+        <p>
+          Notably, the mean HTTP response time showed signs of slowing at around
+          500 req/s, increasing from 35ms to 227ms. Based on these results, we
+          recommend scaling SmoothSail when the application approaches 500 req/s
+          to ensure it can handle the increased load effectively. Overall, our
+          load testing affirms that SmoothSail is robust enough to reliably
+          accommodate the expected user loads.
+        </p>
+        <hr />
+        <h3>Using SmoothSail</h3>
+        <h4>Design</h4>
+        <p>
+          A flag is a fundamental entity in SmoothSail, typically associated
+          with a single feature. Each flag will have the following properties:
+        </p>
+        <ul>
+          <li>fKey: a unique identifier used in flag evaluation</li>
+          <li>
+            title: a user-friendly identifier for use in the SmoothSail UI
+          </li>
+          <li>description: description of the associated feature </li>
+          <li>
+            isActive: boolean used to determine if the feature will be available
+            to users in the flag’s segments
+          </li>
+          <li>
+            segments: associated segments for which the flag should evaluate
+            `true`
+          </li>
+        </ul>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/flag-example.png"
+            alt="flag-example"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          The <strong>user context</strong> is passed to the SDK’s flag
+          evaluation method as an object and contains the user’s properties and
+          associated values. User context is utilized in the flag evaluation
+          logic to determine if the user is within one of the segments
+          associated with the flag.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/userContext.png"
+            alt="user-context"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          An <strong>attribute</strong> is the property used to identify a
+          particular characteristic about a user. Some examples of attributes
+          are `device`, `browser`, and `language`. These attributes are used to
+          create rules within a segment. User context is expected to contain an
+          attribute whose key is equal to the attribute key and the value to be
+          specific to the user.
+        </p>
+        <p>
+          An attribute can be reused within different segments or multiple times
+          within the same segment. This reuse of an attribute within the same
+          segment allows for the case of different acceptable values. (ie. users
+          with an email address ending in either @gmail.com or @yahoo.com). You
+          can find more information on creating rules and using attributes in
+          SmoothSail’s documentation on our GitHub organization page.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/attribute-example.png"
+            alt="attribute-example"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          A segment is a representation of a user demographic. Each segment will
+          have the following properties:
+        </p>
+        <ul>
+          <li>
+            <strong>sKey:</strong> unique identifier
+          </li>
+          <li>
+            <strong>description:</strong> description of the user demographic{" "}
+          </li>
+          <li>
+            <strong>rulesOperator:</strong> the value “all” or “any”, indicates
+            what rules must be true for a user to fall within the segment
+          </li>
+          <li>
+            <strong>rules:</strong> associated rules that place a user in this
+            demographic or grouping
+          </li>
+        </ul>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/segment-example.png"
+            alt="segment-example"
+            className="smoothsail-images"
+          />
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/edit-rules-example.png"
+            alt="edit-rules-example"
+            className="smoothsail-images"
+          />
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/segment-association.png"
+            alt="segment-association"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          Segments can be associated with multiple flags. The association
+          between a segment and a flag means that for any user within that
+          segment, the associated flag will be evaluated to true (assuming the
+          flag is currently active).
+        </p>
+        <p>
+          Associating a segment with multiple flags, an engineer could release
+          multiple features to users within a specific segment. An engineer can
+          also add or remove segments associated with a flag at any time, thus
+          continuing a feature’s release or rolling back the feature for
+          specific demographics.
+        </p>
+        <hr />
+        <h4>Installation</h4>
+        <p>
+          There are two ways developers can integrate SmoothSail into their
+          applications. The first and easiest way is to make use of Docker. We
+          offer a compose file that references SmoothSail’s latest images for
+          each component, along with the latest images of PostgreSQL and NATS.
+          These run in a single Docker network and can be configured to expose
+          API endpoints.
+        </p>
+        <p className="smoothsail-images-container">
+          <img
+            src="images/docker.png"
+            alt="docker"
+            className="smoothsail-images"
+          />
+        </p>
+        <p>
+          Second, since SmoothSail is an open-source platform, developers can
+          access and install each component via GitHub. Open access allows
+          SmoothSail users to modify the application according to their specific
+          requirements, offering greater control over its functionality. We
+          provide comprehensive documentation to guide developers on effectively
+          running each component.
+        </p>
+        <hr />
+        <h3>Future Plans</h3>
+        <p>
+          In summary, SmoothSail is a lightweight, scalable, self-hosted feature
+          flag tool that empowers developer teams to release and roll back
+          features seamlessly. It allows the creation of reusable segments for
+          targeting users during canary and ring feature rollouts.
+        </p>
+        <p>
+          Our team recognizes opportunities for enhancing SmoothSail's
+          functionality. Future improvements could include:
+        </p>
+        <ul>
+          <li>
+            <strong>Feature flag monitoring.</strong> Tracking metrics, like the
+            frequency of feature flag evaluations and response time comparisons
+            between new features and the baseline, may enhance the rollout
+            process. These metrics enable developers to swiftly identify and
+            address potential application performance regressions related to new
+            features, ensuring an optimized rollout experience [ref].
+          </li>
+          <li>
+            <strong>Feature flag expiration.</strong> Once a feature is fully
+            released to the user base, the corresponding flag becomes obsolete
+            and should be promptly removed from the codebase. To facilitate this
+            cleanup process and mitigate technical debt, introducing an option
+            to set expiration dates for flags would be of use. When a flag
+            exceeds its defined lifespan, its evaluation will log a warning,
+            compelling developers to address and eliminate redundant feature
+            flags systematically.
+          </li>
+          <li>
+            <strong>Additional rollout strategies.</strong> Introducing a
+            percentage rollout strategy would be valuable for feature releases
+            that do not require specific user targeting but demand fine-grain
+            control. Incrementally activating a new feature for a growing
+            percentage of randomly selected users would enrich SmoothSail's
+            functionality, catering to diverse use cases.
+          </li>
+        </ul>
+
+        <hr />
+        <h3>References</h3>
+        <ol>
+          <li>
+            Blue-green and canary:
+            https://www.informit.com/articles/article.aspx?p=1833567&seqNum=2
+          </li>
+          <li>
+            Shipping code fast and safe with FF (GitHub):
+            https://github.blog/2021-04-27-ship-code-faster-safer-feature-flags/
+          </li>
+          <li>
+            Rollout strategies with FF:
+            https://reflectoring.io/rollout-strategies-with-feature-flags/
+          </li>
+          <li>
+            About the teamTesting in production & FF:
+            https://www.lambdatest.com/blog/testing-in-production-a-detailed-guide/
+          </li>
+          <li>
+            MQTT Quality of Service (QoS):
+            http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc385349264
+          </li>
+          <li>
+            Comparison of RabbitMQ vs NATS:
+            https://streamnative.io/pulsar/pulsar-vs-rabbitmq-vs-nats
+          </li>
+          <li>
+            NATS JetStream Consumers:
+            https://docs.nats.io/nats-concepts/jetstream/consumers
+          </li>
+          <li>Artillery Load Testing: https://www.artillery.io/ </li>
+          <li>
+            Max Concurrent Connections:
+            https://josephmate.github.io/2022-04-14-max-connections/
+            https://interviewready.io/blog/maximum-number-of-sockets-in-a-single-server
+          </li>
+          <li>
+            WebSockets vs SSE Scalability:
+            https://qalbit.com/blog/an-in-depth-look-at-websockets-and-server-sent-events/#:~:text=Scalability%20of%20both%20communication%20methods,and%20scaling%20across%20multiple%20servers
+          </li>
+        </ol>
+      </div>
+    </div>
+  );
+}
