@@ -17,7 +17,7 @@ export default function CaseStudy() {
         buttonPath={buttonPath}
       />
 
-      <div className="fixed left-5 ">
+      <div className="fixed left-5 top-20">
         <Sidebar />
       </div>
 
