@@ -1,13 +1,5 @@
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import WelcomeSection from "./welcome-section";
 
-const navigation = [
-  { name: "Home", href: "/home" },
-  { name: "Case Study", href: "/case-study" },
-  { name: "Our Team", href: "/team" },
-];
 const title = "SmoothSail Case Study";
 const subtitle =
   "Learn more about how we built SmoothSail and the design choices behind it";
@@ -15,8 +7,6 @@ const button = "Watch Presentation";
 const buttonPath = "https://www.youtube.com/ourVideo";
 
 export default function CaseStudy() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <>
       <WelcomeSection

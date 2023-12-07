@@ -1,27 +1,27 @@
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
+  ServerStackIcon,
+  AdjustmentsVerticalIcon,
+  UserGroupIcon,
 } from "@heroicons/react/20/solid";
 
 const features = [
   {
-    name: "Push to deploy.",
+    name: "Decouple Deployment from Release",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: CloudArrowUpIcon,
+      "Release new features to users when the engineering team is ready",
+    icon: ServerStackIcon,
   },
   {
-    name: "SSL certificates.",
+    name: "User Targeting Capabilities",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    icon: LockClosedIcon,
+      "Comes with user-targeting capabilities through the use of user context and reusable segments",
+    icon: AdjustmentsVerticalIcon,
   },
   {
-    name: "Database backups.",
+    name: "Testing in Production",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: ServerIcon,
+      "Test your new features with actual users in a production environment instead of simulations",
+    icon: UserGroupIcon,
   },
 ];
 
@@ -32,23 +32,24 @@ export default function ProjectScreenShot() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600">
-                Deploy faster
+              <h2 className="text-base font-semibold leading-7 text-ss-blgr">
+                Feature Release with SmoothSail
               </h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <p className="mt-2 text-3xl font-bold tracking-tight text-ss-bl sm:text-4xl">
                 A better workflow
               </p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores impedit perferendis suscipit eaque, iste dolor
-                cupiditate blanditiis ratione.
+              <p className="mt-6 text-lg leading-8 text-ss-bl">
+                Made with engineers in mind, allow engineers to decouple
+                deployment from release, test in production, and target specific
+                users for your new features. Self-hosted and open-source so
+                SmoothSail can be customized to fit your needs.
               </p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-ss-bl lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
+                    <dt className="inline font-semibold text-ss-bl">
                       <feature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                        className="absolute left-1 top-1 h-5 w-5 text-ss-coral"
                         aria-hidden="true"
                       />
                       {feature.name}
@@ -60,7 +61,7 @@ export default function ProjectScreenShot() {
             </div>
           </div>
           <img
-            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+            src="images/smoothsail-dashboard.png"
             alt="Product screenshot"
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
             width={2432}
