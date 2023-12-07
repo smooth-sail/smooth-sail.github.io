@@ -25,7 +25,7 @@ export default function CaseStudy() {
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
-              Introduction
+              <a id="introduction">Introduction</a>
             </h3>
           </div>
           <p className="p-5 text-ss-bl text-xl">
@@ -47,7 +47,7 @@ export default function CaseStudy() {
           </p>
           <div className="border-b border-ss-coral pb-5">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
-              Deployment and Release
+              <a id="deployment-release">Deployment and Release</a>
             </h3>
           </div>
           <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
@@ -174,7 +174,9 @@ export default function CaseStudy() {
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
-              Decoupling Feature Deployment and Release: Feature Flags
+              <a id="feature-flags">
+                Feature Flags: Decoupling Feature Deployment and Release
+              </a>
             </h3>
           </div>
           <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
@@ -398,7 +400,7 @@ export default function CaseStudy() {
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
-              SmoothSail
+              <a id="smoothsail">SmoothSail</a>
             </h3>
           </div>
           <p className="p-5 text-ss-bl text-xl">
@@ -428,7 +430,7 @@ export default function CaseStudy() {
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
-              Architecture
+              <a id="architecture">Architecture</a>
             </h3>
           </div>
           <p className="p-5 text-ss-bl text-xl">
@@ -750,7 +752,7 @@ export default function CaseStudy() {
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
-              Engineering Decisions
+              <a id="engineering-decisions">Engineering Decisions</a>
             </h3>
           </div>
           <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
@@ -1040,7 +1042,7 @@ export default function CaseStudy() {
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
-              Load Testing
+              <a id="load-testing">Load Testing</a>
             </h3>
           </div>
           <p className="p-5 text-ss-bl text-xl">
@@ -1076,7 +1078,7 @@ export default function CaseStudy() {
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
-              Using SmoothSail
+              <a id="using-smoothsail">Using SmoothSail</a>
             </h3>
           </div>
           <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
@@ -1234,7 +1236,7 @@ export default function CaseStudy() {
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
-              Future Plans
+              <a id="future-plans">Future Plans</a>
             </h3>
           </div>
           <p className="p-5 text-ss-bl text-xl">
@@ -1280,7 +1282,7 @@ export default function CaseStudy() {
 
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
-              References
+              <a id="references">References</a>
             </h3>
           </div>
 
@@ -1329,7 +1331,6 @@ export default function CaseStudy() {
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
         </div>
       </div>
-      {/* </div> */}
     </>
   );
 }

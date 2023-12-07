@@ -8,31 +8,29 @@ import {
 } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Introduction", href: "#", icon: HomeIcon, current: true },
-  { name: "Deployment & Release", href: "#", icon: UsersIcon, current: false },
-  { name: "Feature Flags", href: "#", icon: FolderIcon, current: false },
-  { name: "SmoothSail", href: "#", icon: CalendarIcon, current: false },
+  { name: "Introduction", href: "#introduction", icon: HomeIcon },
+  {
+    name: "Deployment & Release",
+    href: "#deployment-release",
+    icon: UsersIcon,
+  },
+  { name: "Feature Flags", href: "#feature-flags", icon: FolderIcon },
+  { name: "SmoothSail", href: "#smoothsail", icon: CalendarIcon },
   {
     name: "Architecture",
-    href: "#",
+    href: "#architecture",
     icon: DocumentDuplicateIcon,
-    current: false,
   },
   {
     name: "Engineering Decisions",
-    href: "#",
+    href: "#engineering-decisions",
     icon: ChartPieIcon,
-    current: false,
   },
-  { name: "Load Testing", href: "#", icon: ChartPieIcon, current: false },
-  { name: "Using SmoothSail", href: "#", icon: ChartPieIcon, current: false },
-  { name: "Future Plans", href: "#", icon: ChartPieIcon, current: false },
-  { name: "References", href: "#", icon: ChartPieIcon, current: false },
+  { name: "Load Testing", href: "#load-testing", icon: ChartPieIcon },
+  { name: "Using SmoothSail", href: "#using-smoothsail", icon: ChartPieIcon },
+  { name: "Future Plans", href: "#future-plans", icon: ChartPieIcon },
+  { name: "References", href: "#references", icon: ChartPieIcon },
 ];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default function Sidebar() {
   return (
@@ -42,20 +40,14 @@ export default function Sidebar() {
           <li key={item.name}>
             <a
               href={item.href}
-              className={classNames(
-                item.current
-                  ? "bg-gray-50 text-indigo-600"
-                  : "text-gray-700 hover:text-indigo-600 hover:bg-gray-50",
-                "group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
-              )}
+              className={
+                "text-ss-blgr hover:text-ss-blgr-hover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+              }
             >
               <item.icon
-                className={classNames(
-                  item.current
-                    ? "text-indigo-600"
-                    : "text-gray-400 group-hover:text-indigo-600",
-                  "h-6 w-6 shrink-0"
-                )}
+                className={
+                  "text-ss-coral group-hover:text-ss-blgr h-6 w-6 shrink-0"
+                }
                 aria-hidden="true"
               />
               {item.name}
