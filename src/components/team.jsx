@@ -31,10 +31,7 @@ export default function Team() {
           <h2 className="text-3xl font-bold tracking-tight text-ss-bl sm:text-4xl">
             Our Engineers
           </h2>
-          <p className="mt-6 text-lg leading-8 text-ss-bl">
-            Please feel free to reach out via email or LinkedIn. We look forward
-            to talking!
-          </p>
+          <p className="mt-6 text-lg leading-8 text-ss-bl"></p>
         </div>
         <ul
           role="list"
@@ -49,10 +46,10 @@ export default function Team() {
                   alt=""
                 />
                 <div>
-                  <h3 className="text-lg font-semibold leading-7 tracking-tight text-ss-coral">
+                  <h3 className="text-2xl font-semibold leading-7 p-2.5 text-ss-bl">
                     {person.name}
                   </h3>
-                  <p className="text-sm font-semibold leading-6 text-ss-bl">
+                  <p className="text-xl font-semibold leading-6 pb-2.5 pl-2.5 text-ss-coral">
                     {person.location}
                   </p>
                   <div className="flex items-center gap-x-6">
