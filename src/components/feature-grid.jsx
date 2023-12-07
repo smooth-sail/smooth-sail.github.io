@@ -7,27 +7,27 @@ import {
 
 const features = [
   {
-    name: "Push to deploy",
+    name: "Fine-grained control",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+      "Releases can target specific audiences like beta-testers rather than the entire user base",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates",
+    name: "Fast Rollback",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+      "Buggy or unsuccessful releases can be rolled back with one click (or toggle!)",
     icon: LockClosedIcon,
   },
   {
-    name: "Simple queues",
+    name: "Simplicity of Feature Release",
     description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+      "Engineering team can handle feature release without the additional complexity of involving other stakeholders",
     icon: ArrowPathIcon,
   },
   {
-    name: "Advanced security",
+    name: "Gentle Learning Curve",
     description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+      "Conditionals at their core, feature flags are relatively easy for teams to understand how to adopt within their code",
     icon: FingerPrintIcon,
   },
 ];
@@ -37,24 +37,24 @@ export default function FeatureGrid() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Deploy faster
+          <h2 className="text-base font-semibold leading-7 text-ss-blgr">
+            Testing in Production with SmoothSail
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+          <p className="mt-2 text-3xl font-bold tracking-tight text-ss-bl sm:text-4xl">
+            Leverage the advantages of Feature Flags
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
+          <p className="mt-6 text-lg leading-8 text-ss-bl">
+            Feature flags give engineers many advantages and helps explain their
+            rise in popularity. There are some key benefits that make feature
+            flags great for feature release and testing in production.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
             {features.map((feature) => (
               <div key={feature.name} className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                <dt className="text-base font-semibold leading-7 text-ss-bl">
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-ss-coral">
                     <feature.icon
                       className="h-6 w-6 text-white"
                       aria-hidden="true"
@@ -62,7 +62,7 @@ export default function FeatureGrid() {
                   </div>
                   {feature.name}
                 </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">
+                <dd className="mt-2 text-base leading-7 text-ss-bl">
                   {feature.description}
                 </dd>
               </div>
