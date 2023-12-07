@@ -1,8 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,jsx}"],
+  // content: ["./src/**/*.{html,jsx}"],
+  content: ["./index.html", "./src/**/*.{html,js,jsx}"],
+  // theme: {
+  //   extend: {},
+  // },
   theme: {
-    extend: {},
+    extend: {
+      // fontFamily: {
+      //   sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+      // },
+      colors: {
+        "ss-white": "ffffff",
+        "ss-blgr": "#239cba",
+        "ss-blgr-hover": "#28B1D4",
+        "ss-bl": "#23395b",
+        "ss-coral": "#eb9486",
+      },
+    },
   },
   plugins: [],
 };
