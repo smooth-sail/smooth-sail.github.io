@@ -21,7 +21,7 @@ export default function CaseStudy() {
         <Sidebar />
       </div>
 
-      <div className="ml-40 p-5">
+      <div className="ml-40 p-10">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
@@ -62,14 +62,15 @@ export default function CaseStudy() {
             application version and releasing it to users simultaneously.
           </p>
           <p className="p-5 text-ss-bl text-xl">
-            Despite frequently occurring in tandem, it’s important to note that
-            deployment and release are distinct concepts. Deployment encompasses
-            the installation of a different software version into a production
-            environment. In other words, deployment involves transferring and
-            configuring software files to the appropriate servers, ensuring all
-            dependencies are satisfied and the application is ready for use.
-            Release, on the other hand, is a process of making a part of the
-            system (a feature) or a system as a whole available to the users.
+            Despite frequently occurring in tandem, it&#39;s important to note
+            that deployment and release are distinct concepts. Deployment
+            encompasses the installation of a different software version into a
+            production environment. In other words, deployment involves
+            transferring and configuring software files to the appropriate
+            servers, ensuring all dependencies are satisfied and the application
+            is ready for use. Release, on the other hand, is a process of making
+            a part of the system (a feature) or a system as a whole available to
+            the users.
           </p>
           <p className="flex justify-center pb-5">
             <img
@@ -89,7 +90,7 @@ export default function CaseStudy() {
             deployment. If one of those features is problematic, all features
             will have to be rolled back. These production rollbacks can be
             lengthy and complex. Therefore, a strong coupling of deployment and
-            release processes can impede an engineering team’s ability to
+            release processes can impede an engineering team&#39;s ability to
             swiftly address critical bug fixes, disrupting the established
             business schedule.
           </p>
@@ -104,7 +105,7 @@ export default function CaseStudy() {
           <p className="p-5 text-ss-bl text-xl">
             A classic <i>canary deployment</i> is performed at the
             infrastructure level with two production environments and a load
-            balancer. All users access the software's stable (old) version
+            balancer. All users access the software&#39;s stable (old) version
             during the first phase of a canary deployment. The newer version
             (canary) is then deployed to a second production environment. Two
             different versions of the application are running simultaneously.
@@ -295,9 +296,9 @@ export default function CaseStudy() {
           <p className="p-5 text-ss-bl text-xl">
             Using feature flags is instrumental for decoupling deployment and
             release in the software development cycle. However, if used simply
-            as a toggle, the "ON" state releases the new feature to all users,
-            making swift rollbacks possible but exposing the entire user base to
-            any repercussions.
+            as a toggle, the &#34;ON&#34; state releases the new feature to all
+            users, making swift rollbacks possible but exposing the entire user
+            base to any repercussions.
           </p>
           <p className="flex justify-center pb-5">
             <img src="images/release-to-all.gif" className="overflow-auto" />
@@ -327,15 +328,19 @@ export default function CaseStudy() {
             prudent for companies concerned about the reputational and financial
             consequences of new feature releases.
           </p>
-          <p className="p-5 text-ss-bl text-xl">
-            gif for feature turned on for targeted user segments
+          <p className="flex justify-center pb-5">
+            <img
+              src="images/target-by-rules.gif"
+              alt="target-by-rules"
+              className="overflow-auto"
+            />
           </p>
           <p className="p-5 text-ss-bl text-xl">
             In addition, as an extension to releasing a new feature to a small
             group of early adopters, developers can leverage feature flags to
             roll out features following the ring deployment model
             <a href="#">REF</a>. In this approach, developers define multiple
-            cohorts of users, referred to as "rings," each with an
+            cohorts of users, referred to as &#34;rings,&#34; each with an
             ever-increasing impact. The team then initiates the feature release,
             starting from the innermost ring and progressing outward. Using one
             feature flag, developers can sequentially add sets of targeting
@@ -351,7 +356,7 @@ export default function CaseStudy() {
           </p>
           <p className="p-5 text-ss-bl text-xl">
             For example, the feature might initially be rolled out exclusively
-            to the company's employees (internal users). Subsequently, a new
+            to the company&#39;s employees (internal users). Subsequently, a new
             segment, defined by user context targeting rules, is added to the
             flag, extending the release to external early adopters (beta
             testers). This iterative process continues, gradually reaching the
@@ -383,13 +388,14 @@ export default function CaseStudy() {
           <p className="p-5 text-ss-bl text-xl">
             However, despite their advantages, commercial solutions come with
             their share of drawbacks. For instance, LaunchDarkly and DevCycle
-            lack support for self-hosting, and Optimizely's self-hosting options
-            are limited. This constraint may prove unsuitable for companies
-            dealing with strictly regulated sensitive data. Another drawback is
-            that Optimizely and LaunchDarkly are not open-source, meaning users
-            encountering issues must rely on the respective companies for
-            resolution. Additionally, any desire for custom changes to the
-            feature flag tool may require waiting or be deemed impossible.
+            lack support for self-hosting, and Optimizely&#39;s self-hosting
+            options are limited. This constraint may prove unsuitable for
+            companies dealing with strictly regulated sensitive data. Another
+            drawback is that Optimizely and LaunchDarkly are not open-source,
+            meaning users encountering issues must rely on the respective
+            companies for resolution. Additionally, any desire for custom
+            changes to the feature flag tool may require waiting or be deemed
+            impossible.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             In cases where existing solutions prove unsustainable, engineering
@@ -455,7 +461,7 @@ export default function CaseStudy() {
             </li>
             <li className="list-disc ml-10">
               The <strong>Software Development Kit (SDK)</strong> (software
-              package) is used in the developer’s backend application and
+              package) is used in the developer&#39;s backend application and
               responsible for connecting to the SDK Service. SDK is also
               responsible for evaluating flag data for any user context the
               developer decides to pass in
@@ -473,7 +479,7 @@ export default function CaseStudy() {
             Manager Platform
           </h4>
           <p className="p-5 text-ss-bl text-xl">
-            The core responsibility of SmoothSail's Manager Platform is to
+            The core responsibility of SmoothSail&#39;s Manager Platform is to
             manage flag data, SDK keys, and execute SDK authentication. It
             comprises the dashboard user interface, the Manager server, and a
             PostgreSQL database.
@@ -490,7 +496,7 @@ export default function CaseStudy() {
             developers overseeing feature flags. This front-end application is
             built on React and allows users to view, create, update, and delete
             feature flag data. The dashboard is also where users can find their
-            SDK key or regenerate the SDK key if it’s compromised.
+            SDK key or regenerate the SDK key if it&#39;s compromised.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             The <strong>Manager server</strong>, an Express application powered
@@ -538,7 +544,7 @@ export default function CaseStudy() {
           </p>
           <p className="p-5 text-ss-bl text-xl">
             The SDK Service, a backend application built on Node.js Express, is
-            an intermediary between SmoothSail's Manager and the SDKs. Its
+            an intermediary between SmoothSail&#39;s Manager and the SDKs. Its
             primary responsibilities include:
           </p>
           <ul className="p-5 text-ss-bl text-xl">
@@ -566,7 +572,7 @@ export default function CaseStudy() {
             the SDK Key as an encrypted value in the Authorization header of an
             HTTP request to the SDK Service. In response, the SDK Service
             forwards the SDK Key to the Manager for authentication. Based on the
-            Manager's validation, the SDK Service either establishes the SSE
+            Manager&#39;s validation, the SDK Service either establishes the SSE
             connection or denies the request.
           </p>
           <p className="p-5 text-ss-bl text-xl">
@@ -583,15 +589,19 @@ export default function CaseStudy() {
             connected SDKs.
           </p>
           <p className="flex justify-center pb-5">
-            Gif for the steps of authentication
+            <img
+              src="images/data-flow.gif"
+              alt="data-flow"
+              className="overflow-auto"
+            />
           </p>
           <p className="p-5 text-ss-bl text-xl">
             If SmoothSail users invalidate the current SDK key, the SDK Service
             promptly terminates all open SSE connections, forcing all SDKs to
-            re-authenticate. To mitigate malicious connection attempts, we’ve
-            incorporated a configurable rate limit for the SDK Service, which
-            users can adjust based on their preferences (defaults to 10 requests
-            per second).
+            re-authenticate. To mitigate malicious connection attempts,
+            we&#39;ve incorporated a configurable rate limit for the SDK
+            Service, which users can adjust based on their preferences (defaults
+            to 10 requests per second).
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
           <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
@@ -609,15 +619,15 @@ export default function CaseStudy() {
             server and the SDK Service, our team chose NATS JetStream. NATS is a
             lightweight, high-performance messaging system that serves as a
             publish-subscribe and request-reply message broker, facilitating
-            communication between distributed systems. JetStream is NATS’s
+            communication between distributed systems. JetStream is NATS&#39;s
             built–in persistence layer that provides additional functionalities
             such as at-least-once and exactly-once message delivery guarantees.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             Ensuring the reliable delivery of data between the Manager server
-            and the SDK Service, we implemented NATS JetStream's "at least once"
-            message delivery guarantee for all communication, configuring
-            applications to acknowledge the receipt of the message.
+            and the SDK Service, we implemented NATS JetStream&#39;s &#34;at
+            least once&#34; message delivery guarantee for all communication,
+            configuring applications to acknowledge the receipt of the message.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             The SDK Service employs the NATS request-reply messaging pattern to
@@ -634,7 +644,7 @@ export default function CaseStudy() {
             />
           </p>
           <p className="p-5 text-ss-bl text-xl">
-            The Manager server utilizes the broker’s publisher-subscriber
+            The Manager server utilizes the broker&#39;s publisher-subscriber
             mechanism to broadcast notifications regarding flag updates to the
             SDK Service. The SDK Service subscribes to feature flag updates upon
             startup, acting as a subscriber. The Manager, designated as a
@@ -692,7 +702,7 @@ export default function CaseStudy() {
             SDK closes the stale connection and initiates a new attempt to
             establish a fresh one. Once successful, the SDK Service will resend
             the latest flag data to ensure any missed updates do not adversely
-            affect the user's application. Users can adjust the heartbeat
+            affect the user&#39;s application. Users can adjust the heartbeat
             interval to suit their specific needs. It is noteworthy that since
             we prioritize consistency over availability in SmoothSail, SDK
             serves default feature flag values during the reconnection attempts,
@@ -714,7 +724,7 @@ export default function CaseStudy() {
             user context, feature flag key, and a default flag value. The
             default value is a fallback if the feature flag is nonexistent or
             the SDK authentication key is invalidated. The generic default,
-            `false`, is utilized if no default value is provided.
+            <code>false</code>, is utilized if no default value is provided.
           </p>
           <p className="flex justify-center pb-5">
             <img
@@ -724,24 +734,25 @@ export default function CaseStudy() {
             />
           </p>
           <p className="p-5 text-ss-bl text-xl">
-            When a feature rollout doesn't specifically target a subset of
+            When a feature rollout doesn&#39;t specifically target a subset of
             users, the flag remains unassociated with any segments, functioning
             as a straightforward toggle that turns on or off the feature for the
             entire user base. Conversely, if a flag is linked to at least one
-            user segment, the user context is evaluated against each segment's
-            user targeting conditions (aka segment rules). If the user aligns
-            with the criteria of any segment, the flag evaluates to `true`;
-            otherwise, it evaluates to `false`.
+            user segment, the user context is evaluated against each
+            segment&#39;s user targeting conditions (aka segment rules). If the
+            user aligns with the criteria of any segment, the flag evaluates to{" "}
+            <code>true</code>; otherwise, it evaluates to <code>false</code>.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             Segments may encompass multiple rules. For example, a segment may
             require a user to be a beta-tester and an internal employee. Within
-            a segment, the segment operator (either `all` or `any`) will dictate
-            how the SDK will evaluate segment-associated rules. Under the `all`
-            operator, every rule within a segment must be satisfied for the user
-            to be placed within this segment and the flag to evaluate to `true`.
-            In contrast, at least one rule must be fulfilled under the 'any'
-            operator.
+            a segment, the segment operator (either <code>all</code> or{" "}
+            <code>any</code>) will dictate how the SDK will evaluate
+            segment-associated rules. Under the <code> all </code>operator,
+            every rule within a segment must be satisfied for the user to be
+            placed within this segment and the flag to evaluate to{" "}
+            <code>true</code>. In contrast, at least one rule must be fulfilled
+            under the <code>any</code> operator.
           </p>
           <p className="flex justify-center pb-5">
             <img
@@ -768,14 +779,14 @@ export default function CaseStudy() {
           </p>
           <p className="p-5 text-ss-bl text-xl">
             As we do not expect our application to handle heavy database loads,
-            the potential performance overhead of the ORM library isn't a
+            the potential performance overhead of the ORM library isn&#39;t a
             concern. On the flip side, adopting the ORM library simplified the
             implementation of the following:
           </p>
           <ul className="p-5 text-ss-bl text-xl">
             <li className="list-disc ml-10">
               <strong>Transaction Atomicity:</strong> Ensuring the atomicity of
-              multiple transactions through the ORM's built-in transaction
+              multiple transactions through the ORM&#39;s built-in transaction
               management mechanism.
             </li>
             <li className="list-disc ml-10">
@@ -795,7 +806,7 @@ export default function CaseStudy() {
             Splitting the Backend into SDK Service and Manager Application
           </h4>
           <p className="p-5 text-ss-bl text-xl">
-            Initially, SmoothSail's architecture comprised the Manager
+            Initially, SmoothSail&#39;s architecture comprised the Manager
             application, user interface, database, and SDKs, burdening the
             Manager app with multiple responsibilities:
           </p>
@@ -815,9 +826,9 @@ export default function CaseStudy() {
           <p className="p-5 text-ss-bl text-xl">
             This initial setup risked a single point of failure, where Manager
             downtime could compromise the entire feature flag system. Moreover,
-            the server's complexity was undergoing substantial growth. We opted
-            to delegate some of the Manager's responsibilities to the SDK
-            Service to enhance system robustness.
+            the server&#39;s complexity was undergoing substantial growth. We
+            opted to delegate some of the Manager&#39;s responsibilities to the
+            SDK Service to enhance system robustness.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             The introduction of two servers, the Manager server and SDK Service,
@@ -908,18 +919,19 @@ export default function CaseStudy() {
           </ul>
           <p className="p-5 text-ss-bl text-xl">
             Considering the inadequacy of reliability with “at most once” and
-            the additional overhead associated with "exactly once" delivery, we
-            opted for "at least once" delivery for our specific use case.
+            the additional overhead associated with &#34;exactly once&#34;
+            delivery, we opted for &#34;at least once&#34; delivery for our
+            specific use case.
           </p>
           <p className="p-5 text-ss-bl text-xl">
-            Our team evaluated two message broker candidates that supported "at
-            least once" message delivery: NATS JetStream and RabbitMQ. Several
-            factors influenced the decision to choose NATS JetStream. First,
-            NATS had lower latency specifications (p99 latency: 22.1ms) compared
-            to RabbitMQ (p99 latency: 344ms) [ref]. Second, while RabbitMQ
-            offered rich functionality, much of it would remain unused, creating
-            unnecessary overhead for our application. Third, we found NATS
-            easier to configure.
+            Our team evaluated two message broker candidates that supported
+            &#34;at least once&#34; message delivery: NATS JetStream and
+            RabbitMQ. Several factors influenced the decision to choose NATS
+            JetStream. First, NATS had lower latency specifications (p99
+            latency: 22.1ms) compared to RabbitMQ (p99 latency: 344ms) [ref].
+            Second, while RabbitMQ offered rich functionality, much of it would
+            remain unused, creating unnecessary overhead for our application.
+            Third, we found NATS easier to configure.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             Other options considered for the Manager server - SDK service
@@ -980,17 +992,18 @@ export default function CaseStudy() {
             bandwidth, we designed a test flag data set with 10 flags, each
             targeting a distinct segment with two rules. In this scenario, the
             SDK service transmitted a modest 3.5 KB message to a single SDK.
-            Even at the advised maximum rate of 500 requests/second (see “Load
-            testing” section), the expected impact of 1.7 MB/s is still
-            comfortably within modern networks' capabilities. For significantly
-            larger feature flag rulesets, developers can leverage SmoothSail's
-            open-source nature to implement message compression logic,
-            optimizing data transmission if needed.
+            Even at the advised maximum rate of 500 requests/second (see
+            <a href="#load-testing"> Load Testing</a> section), the expected
+            impact of 1.7 MB/s is still comfortably within modern networks&#39;
+            capabilities. For significantly larger feature flag rulesets,
+            developers can leverage SmoothSail&#39;s open-source nature to
+            implement message compression logic, optimizing data transmission if
+            needed.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             Although sending the complete feature flag ruleset every time a flag
             change occurs might increase message size, the trade-off is
-            acceptable for SmoothSail's use case. We anticipate that a small
+            acceptable for SmoothSail&#39;s use case. We anticipate that a small
             engineering team will employ only a limited number of active feature
             flags for feature rollouts at any time.
           </p>
@@ -1004,7 +1017,7 @@ export default function CaseStudy() {
             delivery of the latest flag data. After careful consideration, our
             team opted for SSE for several compelling reasons. SSE proved
             user-friendly, featuring built-in support for re-establishing
-            connections, and its implementation didn't demand additional
+            connections, and its implementation didn&#39;t demand additional
             dependencies. SSE required minimal HTTP traffic (compared to
             alternative options) and seamlessly scaled alongside the SDK
             Service. To mitigate potential issues with stale connections, we
@@ -1049,7 +1062,7 @@ export default function CaseStudy() {
             Our team set out to identify the performance threshold where
             SmoothSail starts to show signs of decline as the user load
             increases. This insight was crucial for providing recommendations on
-            optimizing the application's future use.
+            optimizing the application&#39;s future use.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             To conduct a comprehensive assessment, we utilized Artillery.io for
@@ -1100,7 +1113,7 @@ export default function CaseStudy() {
             </li>
             <li className="list-disc ml-10">
               isActive: boolean used to determine if the feature will be
-              available to users in the flag’s segments
+              available to users in the flag&#39;s segments
             </li>
             <li className="list-disc ml-10">
               segments: associated segments for which the flag should evaluate
@@ -1115,10 +1128,10 @@ export default function CaseStudy() {
             />
           </p>
           <p className="p-5 text-ss-bl text-xl">
-            The <strong>user context</strong> is passed to the SDK’s flag
-            evaluation method as an object and contains the user’s properties
-            and associated values. User context is utilized in the flag
-            evaluation logic to determine if the user is within one of the
+            The <strong>user context</strong> is passed to the SDK&#39;s flag
+            evaluation method as an object and contains the user&#39;s
+            properties and associated values. User context is utilized in the
+            flag evaluation logic to determine if the user is within one of the
             segments associated with the flag.
           </p>
           <p className="flex justify-center pb-5">
@@ -1142,7 +1155,7 @@ export default function CaseStudy() {
             same segment allows for the case of different acceptable values.
             (ie. users with an email address ending in either @gmail.com or
             @yahoo.com). You can find more information on creating rules and
-            using attributes in SmoothSail’s documentation on our GitHub
+            using attributes in SmoothSail&#39;s documentation on our GitHub
             organization page.
           </p>
           <p className="flex justify-center pb-5">
@@ -1204,8 +1217,8 @@ export default function CaseStudy() {
             Associating a segment with multiple flags, an engineer could release
             multiple features to users within a specific segment. An engineer
             can also add or remove segments associated with a flag at any time,
-            thus continuing a feature’s release or rolling back the feature for
-            specific demographics.
+            thus continuing a feature&#39;s release or rolling back the feature
+            for specific demographics.
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
           <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
@@ -1214,10 +1227,10 @@ export default function CaseStudy() {
           <p className="p-5 text-ss-bl text-xl">
             There are two ways developers can integrate SmoothSail into their
             applications. The first and easiest way is to make use of Docker. We
-            offer a compose file that references SmoothSail’s latest images for
-            each component, along with the latest images of PostgreSQL and NATS.
-            These run in a single Docker network and can be configured to expose
-            API endpoints.
+            offer a compose file that references SmoothSail&#39;s latest images
+            for each component, along with the latest images of PostgreSQL and
+            NATS. These run in a single Docker network and can be configured to
+            expose API endpoints.
           </p>
           <p className="flex justify-center pb-5">
             <img
@@ -1247,7 +1260,7 @@ export default function CaseStudy() {
             rollouts.
           </p>
           <p className="p-5 text-ss-bl text-xl">
-            Our team recognizes opportunities for enhancing SmoothSail's
+            Our team recognizes opportunities for enhancing SmoothSail&#39;s
             functionality. Future improvements could include:
           </p>
           <ul className="p-5 text-ss-bl text-xl">
@@ -1275,8 +1288,8 @@ export default function CaseStudy() {
               percentage rollout strategy would be valuable for feature releases
               that do not require specific user targeting but demand fine-grain
               control. Incrementally activating a new feature for a growing
-              percentage of randomly selected users would enrich SmoothSail's
-              functionality, catering to diverse use cases.
+              percentage of randomly selected users would enrich
+              SmoothSail&#39;s functionality, catering to diverse use cases.
             </li>
           </ul>
 
@@ -1287,45 +1300,68 @@ export default function CaseStudy() {
           </div>
 
           <ol className="p-5 text-ss-bl text-xl">
-            <li className="list-decimal ml-10">
-              Blue-green and canary:
-              https://www.informit.com/articles/article.aspx?p=1833567&seqNum=2
+            <li className="list-decimal ml-10 p-2">
+              <a id="reference-1">Blue-green and Canary: </a>
+              <a href="https://www.informit.com/articles/article.aspx?p=1833567&seqNum=2">
+                https://www.informit.com/articles/article.aspx?p=1833567&seqNum=2
+              </a>
             </li>
-            <li className="list-decimal ml-10">
-              Shipping code fast and safe with FF (GitHub):
-              https://github.blog/2021-04-27-ship-code-faster-safer-feature-flags/
+            <li className="list-decimal ml-10 p-2">
+              <a id="reference-2">
+                Shipping code fast and safe with Feature Flags (GitHub):{" "}
+              </a>
+              <a href="https://github.blog/2021-04-27-ship-code-faster-safer-feature-flags/">
+                https://github.blog/2021-04-27-ship-code-faster-safer-feature-flags/
+              </a>
             </li>
-            <li className="list-decimal ml-10">
-              Rollout strategies with FF:
-              https://reflectoring.io/rollout-strategies-with-feature-flags/
+            <li className="list-decimal ml-10 p-2">
+              <a id="reference-3">Rollout strategies with Feature Flags: </a>
+              <a href="https://reflectoring.io/rollout-strategies-with-feature-flags/">
+                https://reflectoring.io/rollout-strategies-with-feature-flags/
+              </a>
             </li>
-            <li className="list-decimal ml-10">
-              About the teamTesting in production & FF:
-              https://www.lambdatest.com/blog/testing-in-production-a-detailed-guide/
+            <li className="list-decimal ml-10 p-2">
+              <a id="reference-4">Testing in production & Feature Flags: </a>
+              <a href="https://www.lambdatest.com/blog/testing-in-production-a-detailed-guide/">
+                https://www.lambdatest.com/blog/testing-in-production-a-detailed-guide/
+              </a>
             </li>
-            <li className="list-decimal ml-10">
-              MQTT Quality of Service (QoS):
-              http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc385349264
+            <li className="list-decimal ml-10 p-2">
+              <a id="reference-5">MQTT Quality of Service (QoS): </a>
+              <a href="http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc385349264">
+                http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc385349264
+              </a>
             </li>
-            <li className="list-decimal ml-10">
-              Comparison of RabbitMQ vs NATS:
-              https://streamnative.io/pulsar/pulsar-vs-rabbitmq-vs-nats
+            <li className="list-decimal ml-10 p-2">
+              <a id="reference-6">Comparison of RabbitMQ vs NATS: </a>
+              <a href="https://streamnative.io/pulsar/pulsar-vs-rabbitmq-vs-nats">
+                https://streamnative.io/pulsar/pulsar-vs-rabbitmq-vs-nats
+              </a>
             </li>
-            <li className="list-decimal ml-10">
-              NATS JetStream Consumers:
-              https://docs.nats.io/nats-concepts/jetstream/consumers
+            <li className="list-decimal ml-10 p-2">
+              <a id="reference-7">NATS JetStream Consumers: </a>
+              <a href="https://docs.nats.io/nats-concepts/jetstream/consumers">
+                https://docs.nats.io/nats-concepts/jetstream/consumers
+              </a>
             </li>
-            <li className="list-decimal ml-10">
-              Artillery Load Testing: https://www.artillery.io/{" "}
+            <li className="list-decimal ml-10 p-2">
+              <a id="reference-8">Artillery Load Testing: </a>
+              <a href="https://www.artillery.io/">
+                https://www.artillery.io/
+              </a>{" "}
             </li>
-            <li className="list-decimal ml-10">
-              Max Concurrent Connections:
+            <li className="list-decimal ml-10 p-2">
+              <a id="reference-9">Max Concurrent Connections: </a>
               https://josephmate.github.io/2022-04-14-max-connections/
-              https://interviewready.io/blog/maximum-number-of-sockets-in-a-single-server
+              <a href="https://josephmate.github.io/2022-04-14-max-connections/">
+                https://josephmate.github.io/2022-04-14-max-connections/
+              </a>
             </li>
-            <li className="list-decimal ml-10">
-              WebSockets vs SSE Scalability:
-              https://qalbit.com/blog/an-in-depth-look-at-websockets-and-server-sent-events/#:~:text=Scalability%20of%20both%20communication%20methods,and%20scaling%20across%20multiple%20servers
+            <li className="list-decimal ml-10 p-2">
+              <a id="reference-10">WebSockets vs SSE Scalability: </a>
+              <a href="https://qalbit.com/blog/an-in-depth-look-at-websockets-and-server-sent-events/#:~:text=Scalability%20of%20both%20communication%20methods,and%20scaling%20across%20multiple%20servers">
+                https://qalbit.com/blog/an-in-depth-look-at-websockets-and-server-sent-events/#:~:text=Scalability%20of%20both%20communication%20methods,and%20scaling%20across%20multiple%20servers
+              </a>
             </li>
           </ol>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>

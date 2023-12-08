@@ -41,7 +41,7 @@ export default function Sidebar() {
             <a
               href={item.href}
               className={
-                "text-ss-blgr hover:text-ss-blgr-hover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                "text-ss-bl hover:text-ss-blgr-hover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-md leading-6 font-semibold"
               }
             >
               <item.icon
