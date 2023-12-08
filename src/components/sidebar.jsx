@@ -1,10 +1,14 @@
 import {
+  ServerStackIcon,
   CalendarIcon,
   ChartPieIcon,
-  DocumentDuplicateIcon,
-  FolderIcon,
   HomeIcon,
-  UsersIcon,
+  FlagIcon,
+  WrenchIcon,
+  ScaleIcon,
+  BookOpenIcon,
+  CommandLineIcon,
+  LightBulbIcon,
 } from "@heroicons/react/24/outline";
 
 const navigation = [
@@ -12,24 +16,28 @@ const navigation = [
   {
     name: "Deployment & Release",
     href: "#deployment-release",
-    icon: UsersIcon,
+    icon: ServerStackIcon,
   },
-  { name: "Feature Flags", href: "#feature-flags", icon: FolderIcon },
-  { name: "SmoothSail", href: "#smoothsail", icon: CalendarIcon },
+  { name: "Feature Flags", href: "#feature-flags", icon: FlagIcon },
+  { name: "SmoothSail", href: "#smoothsail", icon: LightBulbIcon },
   {
     name: "Architecture",
     href: "#architecture",
-    icon: DocumentDuplicateIcon,
+    icon: WrenchIcon,
   },
   {
     name: "Engineering Decisions",
     href: "#engineering-decisions",
     icon: ChartPieIcon,
   },
-  { name: "Load Testing", href: "#load-testing", icon: ChartPieIcon },
-  { name: "Using SmoothSail", href: "#using-smoothsail", icon: ChartPieIcon },
-  { name: "Future Plans", href: "#future-plans", icon: ChartPieIcon },
-  { name: "References", href: "#references", icon: ChartPieIcon },
+  { name: "Load Testing", href: "#load-testing", icon: ScaleIcon },
+  {
+    name: "Using SmoothSail",
+    href: "#using-smoothsail",
+    icon: CommandLineIcon,
+  },
+  { name: "Future Plans", href: "#future-plans", icon: CalendarIcon },
+  { name: "References", href: "#references", icon: BookOpenIcon },
 ];
 
 export default function Sidebar() {

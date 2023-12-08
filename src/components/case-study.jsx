@@ -2,8 +2,7 @@ import Sidebar from "./sidebar";
 import WelcomeSection from "./welcome-section";
 
 const title = "SmoothSail Case Study";
-const subtitle =
-  "Learn more about how we built SmoothSail and the design choices behind it";
+const subtitle = "Learn about building SmoothSail and our Design Decisions";
 const button = "Watch Presentation";
 const buttonPath = "https://www.youtube.com/ourVideo";
 
@@ -112,7 +111,10 @@ export default function CaseStudy() {
             The load balancer can incrementally direct user traffic to the new
             software version if everything goes well. If the canary suffers
             significant issues, the load balancer can redirect the traffic back
-            to the stable version of the application. <a href="#">REF</a>
+            to the stable version of the application.{" "}
+            <a href="#references" className="underline">
+              [1]
+            </a>
           </p>
           <p className="flex justify-center pb-5">
             <img
@@ -188,8 +190,11 @@ export default function CaseStudy() {
             releasing new features while minimizing associated costs. They aim
             to deploy a new application version independently without
             maintaining two separate production environments
-            <a href="#">REF</a>. To attain this goal, developers can utilize a
-            strategy called feature flags.
+            <a href="#references" className="underline">
+              [2]
+            </a>
+            . To attain this goal, developers can utilize a strategy called
+            feature flags.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             In its simplest form, a feature flag determines which code section
@@ -248,7 +253,11 @@ export default function CaseStudy() {
             <li className="list-disc ml-10">
               <strong>Testing in production</strong>: Testing is an essential
               part of any software lifecycle. However, testing and staging
-              environments have their limitations <a href="#">REF</a> :
+              environments have their limitations{" "}
+              <a href="#references" className="underline">
+                [4]
+              </a>{" "}
+              :
               <ul className="p-5 text-ss-bl text-xl">
                 <li className="list-disc ml-10">
                   Replicating live, real-world systems in a testing or staging
@@ -281,13 +290,20 @@ export default function CaseStudy() {
           <p className="p-5 text-ss-bl text-xl">
             While feature flags come with trade-offs, such as the potential
             accumulation of dead code and old tests in the repository once a
-            flag is no longer in use (technical debt)<a href="#">REF</a>, they
-            remain a valuable tool. Feature flags facilitate rapid testing and
-            iteration of new features in a live environment, accelerating the
-            development cycle and reducing the time required to bring new
-            features to market.
-            <a href="#">REF</a>
-            <a href="#">REF</a>.
+            flag is no longer in use (technical debt){" "}
+            <a href="#references" className="underline">
+              [2]
+            </a>
+            , they remain a valuable tool. Feature flags facilitate rapid
+            testing and iteration of new features in a live environment,
+            accelerating the development cycle and reducing the time required to
+            bring new features to market.
+            <a href="#references" className="underline">
+              [2]
+            </a>
+            <a href="#references" className="underline">
+              [3]
+            </a>
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
           <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
@@ -339,13 +355,15 @@ export default function CaseStudy() {
             In addition, as an extension to releasing a new feature to a small
             group of early adopters, developers can leverage feature flags to
             roll out features following the ring deployment model
-            <a href="#">REF</a>. In this approach, developers define multiple
-            cohorts of users, referred to as &#34;rings,&#34; each with an
-            ever-increasing impact. The team then initiates the feature release,
-            starting from the innermost ring and progressing outward. Using one
-            feature flag, developers can sequentially add sets of targeting
-            rules (aka, segments) and gradually expand the audience for the new
-            feature.
+            <a href="#references" className="underline">
+              [3]
+            </a>
+            . In this approach, developers define multiple cohorts of users,
+            referred to as &#34;rings,&#34; each with an ever-increasing impact.
+            The team then initiates the feature release, starting from the
+            innermost ring and progressing outward. Using one feature flag,
+            developers can sequentially add sets of targeting rules (aka,
+            segments) and gradually expand the audience for the new feature.
           </p>
           <p className="flex justify-center pb-5">
             <img
@@ -379,7 +397,7 @@ export default function CaseStudy() {
           <p className="p-5 text-ss-bl text-xl">
             In the realm of commercial solutions, three prominent players are
             Optimizely, LaunchDarkly, and DevCycle. All three providers boast
-            user-friendly setups and rich features, such as support for client-
+            user-friendly setups and rich features, such as support for client
             and server-side feature flag use, diverse user targeting
             capabilities (random and specific demographic targeting), various
             rollout strategies (percentage increase, ring rollout, hybrid), A/B
@@ -464,7 +482,7 @@ export default function CaseStudy() {
               package) is used in the developer&#39;s backend application and
               responsible for connecting to the SDK Service. SDK is also
               responsible for evaluating flag data for any user context the
-              developer decides to pass in
+              developer decides to pass in.
             </li>
           </ul>
           <p className="flex justify-center pb-5">
@@ -928,10 +946,13 @@ export default function CaseStudy() {
             &#34;at least once&#34; message delivery: NATS JetStream and
             RabbitMQ. Several factors influenced the decision to choose NATS
             JetStream. First, NATS had lower latency specifications (p99
-            latency: 22.1ms) compared to RabbitMQ (p99 latency: 344ms) [ref].
-            Second, while RabbitMQ offered rich functionality, much of it would
-            remain unused, creating unnecessary overhead for our application.
-            Third, we found NATS easier to configure.
+            latency: 22.1ms) compared to RabbitMQ (p99 latency: 344ms){" "}
+            <a href="#references" className="underline">
+              [6]
+            </a>
+            . Second, while RabbitMQ offered rich functionality, much of it
+            would remain unused, creating unnecessary overhead for our
+            application. Third, we found NATS easier to configure.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             Other options considered for the Manager server - SDK service
@@ -1098,26 +1119,29 @@ export default function CaseStudy() {
             Design
           </h4>
           <p className="p-5 text-ss-bl text-xl">
-            A flag is a fundamental entity in SmoothSail, typically associated
-            with a single feature. Each flag will have the following properties:
+            A <strong>flag</strong> is a fundamental entity in SmoothSail,
+            typically associated with a single feature. Each flag will have the
+            following properties:
           </p>
           <ul className="p-5 text-ss-bl text-xl">
             <li className="list-disc ml-10">
-              fKey: a unique identifier used in flag evaluation
+              <strong>fKey:</strong> a unique identifier used in flag evaluation
             </li>
             <li className="list-disc ml-10">
-              title: a user-friendly identifier for use in the SmoothSail UI
+              <strong>title:</strong> a user-friendly identifier for use in the
+              SmoothSail UI
             </li>
             <li className="list-disc ml-10">
-              description: description of the associated feature{" "}
+              <strong>description:</strong> description of the associated
+              feature{" "}
             </li>
             <li className="list-disc ml-10">
-              isActive: boolean used to determine if the feature will be
-              available to users in the flag&#39;s segments
+              <strong>isActive:</strong> boolean used to determine if the
+              feature will be available to users in the flag&#39;s segments
             </li>
             <li className="list-disc ml-10">
-              segments: associated segments for which the flag should evaluate
-              `true`
+              <strong>segments:</strong> associated segments for which the flag
+              should evaluate <code>true</code>
             </li>
           </ul>
           <p className="flex justify-center pb-5">
@@ -1126,6 +1150,9 @@ export default function CaseStudy() {
               alt="flag-example"
               className="overflow-auto"
             />
+          </p>
+          <p className="px-5 pb-5 text-ss-bl text-lg text-center">
+            Flag Creation
           </p>
           <p className="p-5 text-ss-bl text-xl">
             The <strong>user context</strong> is passed to the SDK&#39;s flag
@@ -1144,10 +1171,11 @@ export default function CaseStudy() {
           <p className="p-5 text-ss-bl text-xl">
             An <strong>attribute</strong> is the property used to identify a
             particular characteristic about a user. Some examples of attributes
-            are `device`, `browser`, and `language`. These attributes are used
-            to create rules within a segment. User context is expected to
-            contain an attribute whose key is equal to the attribute key and the
-            value to be specific to the user.
+            are <code>device</code>, <code>browser</code>, and{" "}
+            <code>language</code>. These attributes are used to create rules
+            within a segment. User context is expected to contain an attribute
+            whose key is equal to the attribute key and the value to be specific
+            to the user.
           </p>
           <p className="p-5 text-ss-bl text-xl">
             An attribute can be reused within different segments or multiple
@@ -1165,9 +1193,12 @@ export default function CaseStudy() {
               className="overflow-auto"
             />
           </p>
+          <p className="px-5 pb-5 text-ss-bl text-lg text-center">
+            Attribute Creation
+          </p>
           <p className="p-5 text-ss-bl text-xl">
-            A segment is a representation of a user demographic. Each segment
-            will have the following properties:
+            A <strong>segment</strong> is a representation of a user
+            demographic. Each segment will have the following properties:
           </p>
           <ul className="p-5 text-ss-bl text-xl">
             <li className="list-disc ml-10">
@@ -1177,9 +1208,9 @@ export default function CaseStudy() {
               <strong>description:</strong> description of the user demographic{" "}
             </li>
             <li className="list-disc ml-10">
-              <strong>rulesOperator:</strong> the value “all” or “any”,
-              indicates what rules must be true for a user to fall within the
-              segment
+              <strong>rulesOperator:</strong> the value <code>all</code> or{" "}
+              <code>any</code>, indicates what rules must be true for a user to
+              fall within the segment
             </li>
             <li className="list-disc ml-10">
               <strong>rules:</strong> associated rules that place a user in this
@@ -1193,6 +1224,9 @@ export default function CaseStudy() {
               className="overflow-auto"
             />
           </p>
+          <p className="px-5 pb-5 text-ss-bl text-lg text-center">
+            Segment Creation
+          </p>
           <p className="flex justify-center pb-5">
             <img
               src="images/edit-rules-example.png"
@@ -1200,13 +1234,10 @@ export default function CaseStudy() {
               className="overflow-auto"
             />
           </p>
-          <p className="flex justify-center pb-5">
-            <img
-              src="images/segment-association-example.png"
-              alt="segment-association"
-              className="overflow-auto"
-            />
+          <p className="px-5 pb-5 text-ss-bl text-lg text-center">
+            Rule Association with Segments
           </p>
+
           <p className="p-5 text-ss-bl text-xl">
             Segments can be associated with multiple flags. The association
             between a segment and a flag means that for any user within that
@@ -1219,6 +1250,16 @@ export default function CaseStudy() {
             can also add or remove segments associated with a flag at any time,
             thus continuing a feature&#39;s release or rolling back the feature
             for specific demographics.
+          </p>
+          <p className="flex justify-center pb-5">
+            <img
+              src="images/segment-association-example.png"
+              alt="segment-association"
+              className="overflow-auto"
+            />
+          </p>
+          <p className="px-5 pb-5 text-ss-bl text-lg text-center">
+            Segment Association with Flag
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
           <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
@@ -1271,7 +1312,10 @@ export default function CaseStudy() {
               rollout process. These metrics enable developers to swiftly
               identify and address potential application performance regressions
               related to new features, ensuring an optimized rollout experience
-              [ref].
+              <a href="#references" className="underline">
+                [4]
+              </a>
+              .
             </li>
             <li className="list-disc ml-10">
               <strong>Feature flag expiration.</strong> Once a feature is fully

@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  EnvelopeIcon,
+  GlobeAltIcon,
+  IdentificationIcon,
+} from "@heroicons/react/24/solid";
 
 const navigation = [
   { name: "Home", href: "/home" },
@@ -13,21 +19,33 @@ const people = [
     name: "Emily Olszewski",
     location: "Tucson, AZ",
     imageUrl: "images/emily-olszewski.png",
+    email: "eolszewski14@gmail.com",
+    site: "https://emilyolszewski.dev/",
+    linkedin: "https://www.linkedin.com/in/emily-olszewski/",
   },
   {
     name: "Bradley Taylor",
     location: "Las Vegas, NV",
     imageUrl: "images/bradley-taylor.png",
+    email: "taylorbradleyr@gmail.com",
+    site: "",
+    linkedin: "https://www.linkedin.com/in/bradleyroberttaylor/",
   },
   {
     name: "Dariia Vyshenska",
     location: "Seattle, WA",
     imageUrl: "images/dariia-vyshenska.png",
+    email: "dariia.vyshenska@gmail.com",
+    site: "",
+    linkedin: "https://www.linkedin.com/in/dariia-vyshenska/",
   },
   {
     name: "Isaac Lee",
     location: "Los Angeles, CA",
     imageUrl: "images/isaac-lee.png",
+    email: "lee.isaacy@gmail.com",
+    site: "",
+    linkedin: "https://www.linkedin.com/in/isaac-lee-2132709a/",
   },
 ];
 
@@ -141,13 +159,27 @@ export default function TeamPage() {
                           <h3 className="text-2xl pt-5 font-semibold leading-7 text-white">
                             {person.name}
                           </h3>
-                          <p className="text-xl p-2.5 font-semibold leading-6 text-ss-coral">
+                          <p className="text-xl p-2.5 font-semibold leading-6 text-ss-blgr">
                             {person.location}
                           </p>
-                          <div className="flex items-center gap-x-6">
-                            <p>email</p>
-                            <p>site</p>
-                            <p>LinkedIn</p>
+                          <div className="flex justify-center gap-x-6">
+                            <a href={"mailto:" + person.email}>
+                              <EnvelopeIcon className="h-6 w-6 text-white hover:text-ss-coral" />
+                            </a>
+                            <a
+                              href={person.site}
+                              rel="noreferrer"
+                              target="_blank"
+                            >
+                              <GlobeAltIcon className="h-6 w-6 text-white hover:text-ss-coral" />
+                            </a>
+                            <a
+                              href={person.linkedin}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <IdentificationIcon className="h-6 w-6 text-white hover:text-ss-coral" />
+                            </a>
                           </div>
                         </div>
                       </div>
