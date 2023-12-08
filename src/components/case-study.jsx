@@ -17,11 +17,11 @@ export default function CaseStudy() {
         buttonPath={buttonPath}
       />
 
-      <div className="fixed left-5 top-20">
+      <div className="sticky left-5 top-20 float-left">
         <Sidebar />
       </div>
 
-      <div className="ml-40">
+      <div className="ml-40 p-5">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">

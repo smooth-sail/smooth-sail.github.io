@@ -1,4 +1,8 @@
-import { EnvelopeIcon } from "@heroicons/react/20/solid";
+import {
+  EnvelopeIcon,
+  GlobeAltIcon,
+  LinkIcon,
+} from "@heroicons/react/20/solid";
 
 const people = [
   {
@@ -49,7 +53,7 @@ export default function Team() {
                   <h3 className="text-2xl font-semibold leading-7 p-2.5 text-ss-bl">
                     {person.name}
                   </h3>
-                  <p className="text-xl font-semibold leading-6 pb-2.5 pl-2.5 text-ss-coral">
+                  <p className="text-xl font-semibold leading-6 pb-2.5 pl-2.5 text-ss-blgr">
                     {person.location}
                   </p>
                   <div className="flex items-center gap-x-6">

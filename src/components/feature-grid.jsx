@@ -1,8 +1,8 @@
 import {
-  ArrowPathIcon,
   CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  UserCircleIcon,
+  WrenchScrewdriverIcon,
+  CodeBracketIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
@@ -10,25 +10,25 @@ const features = [
     name: "Fine-grained control",
     description:
       "Releases can target specific audiences like beta-testers rather than the entire user base",
-    icon: CloudArrowUpIcon,
+    icon: UserCircleIcon,
   },
   {
     name: "Fast Rollback",
     description:
       "Buggy or unsuccessful releases can be rolled back with one click (or toggle!)",
-    icon: LockClosedIcon,
+    icon: WrenchScrewdriverIcon,
   },
   {
     name: "Simplicity of Feature Release",
     description:
       "Engineering team can handle feature release without the additional complexity of involving other stakeholders",
-    icon: ArrowPathIcon,
+    icon: CloudArrowUpIcon,
   },
   {
     name: "Gentle Learning Curve",
     description:
       "Conditionals at their core, feature flags are relatively easy for teams to understand how to adopt within their code",
-    icon: FingerPrintIcon,
+    icon: CodeBracketIcon,
   },
 ];
 
