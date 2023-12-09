@@ -26,7 +26,7 @@ export default function WelcomeSection({
             aria-label="Global"
           >
             <div className="flex lg:flex-1">
-              <a href="/home" className="-m-1.5 p-1.5">
+              <a href="#/home" className="-m-1.5 p-1.5">
                 <span className="sr-only">SmoothSail</span>
                 <img className="h-20 w-auto" src="images/logo.png" alt="logo" />
               </a>
