@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import Sidebar from "./sidebar";
 import WelcomeSection from "./welcome-section";
 
@@ -112,9 +113,9 @@ export default function CaseStudy() {
             software version if everything goes well. If the canary suffers
             significant issues, the load balancer can redirect the traffic back
             to the stable version of the application.{" "}
-            <a href="#references" className="underline">
+            <HashLink to="#references" className="underline">
               [1]
-            </a>
+            </HashLink>
           </p>
           <p className="flex justify-center pb-5">
             <img
@@ -190,9 +191,9 @@ export default function CaseStudy() {
             releasing new features while minimizing associated costs. They aim
             to deploy a new application version independently without
             maintaining two separate production environments
-            <a href="#references" className="underline">
+            <HashLink to="#references" className="underline">
               [2]
-            </a>
+            </HashLink>
             . To attain this goal, developers can utilize a strategy called
             feature flags.
           </p>
@@ -254,9 +255,9 @@ export default function CaseStudy() {
               <strong>Testing in production</strong>: Testing is an essential
               part of any software lifecycle. However, testing and staging
               environments have their limitations{" "}
-              <a href="#references" className="underline">
+              <HashLink to="#references" className="underline">
                 [4]
-              </a>{" "}
+              </HashLink>{" "}
               :
               <ul className="p-5 text-ss-bl text-xl">
                 <li className="list-disc ml-10">
@@ -291,19 +292,19 @@ export default function CaseStudy() {
             While feature flags come with trade-offs, such as the potential
             accumulation of dead code and old tests in the repository once a
             flag is no longer in use (technical debt){" "}
-            <a href="#references" className="underline">
+            <HashLink to="#references" className="underline">
               [2]
-            </a>
+            </HashLink>
             , they remain a valuable tool. Feature flags facilitate rapid
             testing and iteration of new features in a live environment,
             accelerating the development cycle and reducing the time required to
             bring new features to market.
-            <a href="#references" className="underline">
+            <HashLink to="#references" className="underline">
               [2]
-            </a>
-            <a href="#references" className="underline">
+            </HashLink>
+            <HashLink to="#references" className="underline">
               [3]
-            </a>
+            </HashLink>
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
           <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
@@ -355,9 +356,9 @@ export default function CaseStudy() {
             In addition, as an extension to releasing a new feature to a small
             group of early adopters, developers can leverage feature flags to
             roll out features following the ring deployment model
-            <a href="#references" className="underline">
+            <HashLink to="#references" className="underline">
               [3]
-            </a>
+            </HashLink>
             . In this approach, developers define multiple cohorts of users,
             referred to as &#34;rings,&#34; each with an ever-increasing impact.
             The team then initiates the feature release, starting from the
@@ -947,9 +948,9 @@ export default function CaseStudy() {
             RabbitMQ. Several factors influenced the decision to choose NATS
             JetStream. First, NATS had lower latency specifications (p99
             latency: 22.1ms) compared to RabbitMQ (p99 latency: 344ms){" "}
-            <a href="#references" className="underline">
+            <HashLink to="#references" className="underline">
               [6]
-            </a>
+            </HashLink>
             . Second, while RabbitMQ offered rich functionality, much of it
             would remain unused, creating unnecessary overhead for our
             application. Third, we found NATS easier to configure.
@@ -1312,9 +1313,9 @@ export default function CaseStudy() {
               rollout process. These metrics enable developers to swiftly
               identify and address potential application performance regressions
               related to new features, ensuring an optimized rollout experience
-              <a href="#references" className="underline">
+              <HashLink to="#references" className="underline">
                 [4]
-              </a>
+              </HashLink>
               .
             </li>
             <li className="list-disc ml-10">
