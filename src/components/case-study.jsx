@@ -1339,7 +1339,7 @@ export default function CaseStudy() {
 
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
-              <a id="#references">References</a>
+              <a id="references">References</a>
             </h3>
           </div>
 
