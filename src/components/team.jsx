@@ -18,7 +18,7 @@ const people = [
     location: "Las Vegas, NV",
     imageUrl: "images/bradley-taylor.png",
     email: "taylorbradleyr@gmail.com",
-    site: "",
+    site: "https://brad-taylor.com",
     linkedin: "https://www.linkedin.com/in/bradleyroberttaylor/",
   },
   {
@@ -26,7 +26,7 @@ const people = [
     location: "Seattle, WA",
     imageUrl: "images/dariia-vyshenska.png",
     email: "dariia.vyshenska@gmail.com",
-    site: "",
+    site: "https://dariiavyshenska.github.io/",
     linkedin: "https://www.linkedin.com/in/dariia-vyshenska/",
   },
   {
@@ -34,7 +34,7 @@ const people = [
     location: "Los Angeles, CA",
     imageUrl: "images/isaac-lee.png",
     email: "lee.isaacy@gmail.com",
-    site: "",
+    site: "https://isaacylee.github.io",
     linkedin: "https://www.linkedin.com/in/isaac-lee-2132709a/",
   },
 ];
