@@ -8,7 +8,7 @@ export default function Home() {
   const subtitle =
     "Open-source, Self-Hosted feature flag software that enables developers to release new features independently of deployment";
   const button = "Read Case Study";
-  const buttonPath = "/case-study";
+  const buttonPath = "#/case-study";
 
   return (
     <>
