@@ -1,6 +1,6 @@
 import FeatureGrid from "./feature-grid";
 import ProjectScreenShot from "./project-screenshot";
-import Team from "./team";
+import TeamGrid from "./team";
 import WelcomeSection from "./welcome-section";
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
             Read Case Study
           </a>
         </div>
-        <Team />
+        <TeamGrid />
       </div>
     </>
   );
