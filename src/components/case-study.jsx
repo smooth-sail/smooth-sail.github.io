@@ -18,14 +18,16 @@ export default function CaseStudy() {
         buttonPath={buttonPath}
       />
 
-      <div className="sticky left-5 top-20 float-left">
-        <Sidebar />
+      <div className="sticky left-5 top-20 lg:float-left">
+        <div className="hidden lg:block">
+          <Sidebar />
+        </div>
       </div>
 
-      <div className="ml-40 p-10">
+      <div className="lg:ml-40 p-10">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
+            <h3 className="text-4xl font-semibold text-ss-bl p-5">
               <a id="introduction">Introduction</a>
             </h3>
           </div>
@@ -47,11 +49,11 @@ export default function CaseStudy() {
             />
           </p>
           <div className="border-b border-ss-coral pb-5">
-            <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
+            <h3 className="text-4xl font-semibold text-ss-bl p-5">
               <a id="deployment-release">Deployment and Release</a>
             </h3>
           </div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold  text-ss-bl p-5">
             Feature Deployment and Release
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -96,7 +98,7 @@ export default function CaseStudy() {
             business schedule.
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">
             Feature Release Strategies
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -182,13 +184,13 @@ export default function CaseStudy() {
             approach is called <strong>feature flags.</strong>
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
+            <h3 className="text-4xl font-semibold text-ss-bl p-5">
               <a id="feature-flags">
                 Feature Flags: Decoupling Feature Deployment and Release
               </a>
             </h3>
           </div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">
             What is a Feature Flag?
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -228,7 +230,7 @@ export default function CaseStudy() {
             <img src="images/deploy-to-release.gif" className="overflow-auto" />
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">
             Advantages of using Feature Flags
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -332,7 +334,7 @@ export default function CaseStudy() {
             </HashLink>
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">
             User targeting with Feature Flags
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -399,7 +401,7 @@ export default function CaseStudy() {
             <img
               src="images/ring-deploy.png"
               alt="ring-deploy"
-              className="overflow-auto"
+              className="overflow-auto rounded-xl"
             />
           </p>
           <p className="p-5 text-ss-bl text-xl">
@@ -415,7 +417,7 @@ export default function CaseStudy() {
             potentially buggy features to the wrong demographics.
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">
             Feature Flag Providers
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -453,7 +455,7 @@ export default function CaseStudy() {
             appealing or even unfeasible.
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
+            <h3 className="text-4xl font-semibold text-ss-bl p-5">
               <a id="smoothsail">SmoothSail</a>
             </h3>
           </div>
@@ -483,7 +485,7 @@ export default function CaseStudy() {
             />
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
+            <h3 className="text-4xl font-semibold text-ss-bl p-5">
               <a id="architecture">Architecture</a>
             </h3>
           </div>
@@ -523,7 +525,7 @@ export default function CaseStudy() {
             />
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">
             Manager Platform
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -580,7 +582,7 @@ export default function CaseStudy() {
             integrity of our system.
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold  text-ss-bl p-5">
             SDK Service
           </h4>
           <p className="flex justify-center pb-5">
@@ -652,7 +654,7 @@ export default function CaseStudy() {
             to 10 requests per second).
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">
             NATS JetStream
           </h4>
           <p className="flex justify-center pb-5">
@@ -710,7 +712,7 @@ export default function CaseStudy() {
             />
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">
             Software Development Kit (SDK)
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -758,7 +760,7 @@ export default function CaseStudy() {
             event of SSE connection malfunction.
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold  text-ss-bl p-5">
             Flag Evaluation
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -810,11 +812,11 @@ export default function CaseStudy() {
             />
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
+            <h3 className="text-4xl font-semibold  text-ss-bl p-5">
               <a id="engineering-decisions">Engineering Decisions</a>
             </h3>
           </div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold  text-ss-bl p-5">
             Communication between the Manager Server and the PostgresSQL
             database
           </h4>
@@ -850,7 +852,7 @@ export default function CaseStudy() {
             </li>
           </ul>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">
             Splitting the Backend into SDK Service and Manager Application
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -918,7 +920,7 @@ export default function CaseStudy() {
             advantages gained significantly outweigh the associated drawbacks.
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">
             Communication between the SDK Service and the Manager platform
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -1006,7 +1008,7 @@ export default function CaseStudy() {
             to its resource-intensive implementation.
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold  text-ss-bl p-5">
             SSE streaming: whole feature flag ruleset vs. updates only
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -1063,7 +1065,7 @@ export default function CaseStudy() {
             flags for feature rollouts at any time.
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold  text-ss-bl p-5">
             Communication between the SDK Service and SDK
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -1109,7 +1111,7 @@ export default function CaseStudy() {
             />
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
+            <h3 className="text-4xl font-semibold  text-ss-bl p-5">
               <a id="load-testing">Load Testing</a>
             </h3>
           </div>
@@ -1145,13 +1147,11 @@ export default function CaseStudy() {
             robust enough to reliably accommodate the expected user loads.
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
+            <h3 className="text-4xl font-semibold  text-ss-bl p-5">
               <a id="using-smoothsail">Using SmoothSail</a>
             </h3>
           </div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
-            Design
-          </h4>
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">Design</h4>
           <p className="p-5 text-ss-bl text-xl">
             A <strong>flag</strong> is a fundamental entity in SmoothSail,
             typically associated with a single feature. Each flag will have the
@@ -1296,7 +1296,7 @@ export default function CaseStudy() {
             Segment Association with Flag
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10"></div>
-          <h4 className="text-2xl font-semibold leading-6 text-ss-bl p-5">
+          <h4 className="text-2xl font-semibold text-ss-bl p-5">
             Installation
           </h4>
           <p className="p-5 text-ss-bl text-xl">
@@ -1323,7 +1323,7 @@ export default function CaseStudy() {
             developers on effectively running each component.
           </p>
           <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
+            <h3 className="text-4xl font-semibold text-ss-bl p-5">
               <a id="future-plans">Future Plans</a>
             </h3>
           </div>
@@ -1376,7 +1376,7 @@ export default function CaseStudy() {
           </ul>
 
           <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold leading-6 text-ss-bl p-5">
+            <h3 className="text-4xl font-semibold text-ss-bl p-5">
               <a id="references">References</a>
             </h3>
           </div>

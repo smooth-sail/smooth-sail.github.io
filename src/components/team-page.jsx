@@ -88,7 +88,7 @@ export default function TeamPage() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-sm font-semibold leading-6 text-white hover:text-ss-coral"
+                      className="text-md font-semibold leading-6 text-white hover:text-ss-coral"
                     >
                       {item.name}
                     </a>
