@@ -5,7 +5,7 @@ import WelcomeSection from "./welcome-section";
 const title = "SmoothSail Case Study";
 const subtitle = "Learn about building SmoothSail and our Design Decisions";
 const button = "Watch Presentation";
-const buttonPath = "https://www.youtube.com/ourVideo";
+const buttonPath = "https://www.youtube.com/watch?v=0jeH7HQbFN0";
 
 export default function CaseStudy() {
   return (
