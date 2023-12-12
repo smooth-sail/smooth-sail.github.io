@@ -39,17 +39,18 @@ export default function ProjectScreenShot() {
                 A better workflow
               </p>
               <p className="mt-6 text-lg leading-8 text-ss-bl">
-                Made with engineers in mind, allow engineers to decouple
-                deployment from release, test in production, and target specific
-                users for your new features. Self-hosted and open-source so
-                SmoothSail can be customized to fit your needs.
+                Designed for engineers, SmoothSail enables decoupling of
+                deployment from release, testing in production, and targeting
+                specific users for new features. As a self-hosted and
+                open-source solution, SmoothSail can be tailored to meet your
+                specific requirements.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-ss-bl lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-ss-bl">
                       <feature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-ss-coral"
+                        className="absolute left-1 top-1 h-6 w-auto text-ss-coral"
                         aria-hidden="true"
                       />
                       {feature.name}

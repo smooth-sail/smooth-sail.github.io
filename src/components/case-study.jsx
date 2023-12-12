@@ -1199,7 +1199,7 @@ export default function CaseStudy() {
             <img
               src="images/userContext.png"
               alt="user-context"
-              className="overflow-auto"
+              className="overflow-auto max-w-2xl"
             />
           </p>
           <p className="p-5 text-ss-bl text-xl">
