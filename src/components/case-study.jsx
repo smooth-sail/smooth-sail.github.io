@@ -1,6 +1,7 @@
 import { HashLink } from "react-router-hash-link";
 import Sidebar from "./sidebar";
 import WelcomeSection from "./welcome-section";
+import scrollWithOffset from "../utils/scrollWithOffset";
 
 const title = "SmoothSail Case Study";
 const subtitle = "Learn about building SmoothSail and our Design Decisions";
@@ -113,7 +114,11 @@ export default function CaseStudy() {
             software version if everything goes well. If the canary suffers
             significant issues, the load balancer can redirect the traffic back
             to the stable version of the application.{" "}
-            <HashLink to="#references" className="underline">
+            <HashLink
+              scroll={(el) => scrollWithOffset(el)}
+              to="#references"
+              className="underline"
+            >
               [1]
             </HashLink>
           </p>
@@ -191,7 +196,11 @@ export default function CaseStudy() {
             releasing new features while minimizing associated costs. They aim
             to deploy a new application version independently without
             maintaining two separate production environments
-            <HashLink to="#references" className="underline">
+            <HashLink
+              scroll={(el) => scrollWithOffset(el)}
+              to="#references"
+              className="underline"
+            >
               [2]
             </HashLink>
             . To attain this goal, developers can utilize a strategy called
@@ -255,7 +264,11 @@ export default function CaseStudy() {
               <strong>Testing in production</strong>: Testing is an essential
               part of any software lifecycle. However, testing and staging
               environments have their limitations{" "}
-              <HashLink to="#references" className="underline">
+              <HashLink
+                scroll={(el) => scrollWithOffset(el)}
+                to="#references"
+                className="underline"
+              >
                 [4]
               </HashLink>{" "}
               :
@@ -292,17 +305,29 @@ export default function CaseStudy() {
             While feature flags come with trade-offs, such as the potential
             accumulation of dead code and old tests in the repository once a
             flag is no longer in use (technical debt){" "}
-            <HashLink to="#references" className="underline">
+            <HashLink
+              scroll={(el) => scrollWithOffset(el)}
+              to="#references"
+              className="underline"
+            >
               [2]
             </HashLink>
             , they remain a valuable tool. Feature flags facilitate rapid
             testing and iteration of new features in a live environment,
             accelerating the development cycle and reducing the time required to
             bring new features to market.
-            <HashLink to="#references" className="underline">
+            <HashLink
+              scroll={(el) => scrollWithOffset(el)}
+              to="#references"
+              className="underline"
+            >
               [2]
             </HashLink>
-            <HashLink to="#references" className="underline">
+            <HashLink
+              scroll={(el) => scrollWithOffset(el)}
+              to="#references"
+              className="underline"
+            >
               [3]
             </HashLink>
           </p>
@@ -356,7 +381,11 @@ export default function CaseStudy() {
             In addition, as an extension to releasing a new feature to a small
             group of early adopters, developers can leverage feature flags to
             roll out features following the ring deployment model
-            <HashLink to="#references" className="underline">
+            <HashLink
+              scroll={(el) => scrollWithOffset(el)}
+              to="#references"
+              className="underline"
+            >
               [3]
             </HashLink>
             . In this approach, developers define multiple cohorts of users,
@@ -948,7 +977,11 @@ export default function CaseStudy() {
             RabbitMQ. Several factors influenced the decision to choose NATS
             JetStream. First, NATS had lower latency specifications (p99
             latency: 22.1ms) compared to RabbitMQ (p99 latency: 344ms){" "}
-            <HashLink to="#references" className="underline">
+            <HashLink
+              scroll={(el) => scrollWithOffset(el)}
+              to="#references"
+              className="underline"
+            >
               [6]
             </HashLink>
             . Second, while RabbitMQ offered rich functionality, much of it
@@ -1149,7 +1182,7 @@ export default function CaseStudy() {
             <img
               src="images/flag-example.png"
               alt="flag-example"
-              className="overflow-auto"
+              className="overflow-auto rounded-xl"
             />
           </p>
           <p className="px-5 pb-5 text-ss-bl text-lg text-center">
@@ -1191,7 +1224,7 @@ export default function CaseStudy() {
             <img
               src="images/attribute-example.png"
               alt="attribute-example"
-              className="overflow-auto"
+              className="overflow-auto rounded-xl"
             />
           </p>
           <p className="px-5 pb-5 text-ss-bl text-lg text-center">
@@ -1222,7 +1255,7 @@ export default function CaseStudy() {
             <img
               src="images/segment-example.png"
               alt="segment-example"
-              className="overflow-auto"
+              className="overflow-auto rounded-xl"
             />
           </p>
           <p className="px-5 pb-5 text-ss-bl text-lg text-center">
@@ -1232,7 +1265,7 @@ export default function CaseStudy() {
             <img
               src="images/edit-rules-example.png"
               alt="edit-rules-example"
-              className="overflow-auto"
+              className="overflow-auto rounded-xl"
             />
           </p>
           <p className="px-5 pb-5 text-ss-bl text-lg text-center">
@@ -1256,7 +1289,7 @@ export default function CaseStudy() {
             <img
               src="images/segment-association-example.png"
               alt="segment-association"
-              className="overflow-auto"
+              className="overflow-auto rounded-xl"
             />
           </p>
           <p className="px-5 pb-5 text-ss-bl text-lg text-center">
@@ -1313,7 +1346,11 @@ export default function CaseStudy() {
               rollout process. These metrics enable developers to swiftly
               identify and address potential application performance regressions
               related to new features, ensuring an optimized rollout experience
-              <HashLink to="#references" className="underline">
+              <HashLink
+                scroll={(el) => scrollWithOffset(el)}
+                to="#references"
+                className="underline"
+              >
                 [4]
               </HashLink>
               .

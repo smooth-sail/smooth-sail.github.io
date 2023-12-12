@@ -7,7 +7,7 @@ import {
 
 const features = [
   {
-    name: "Fine-grained control",
+    name: "Fine-Grained Control",
     description:
       "Releases can target specific audiences like beta-testers rather than the entire user base",
     icon: UserCircleIcon,
@@ -15,7 +15,7 @@ const features = [
   {
     name: "Fast Rollback",
     description:
-      "Buggy or unsuccessful releases can be rolled back with one click (or toggle!)",
+      "Buggy or unsuccessful releases can be rolled back with one click",
     icon: WrenchScrewdriverIcon,
   },
   {
@@ -37,16 +37,16 @@ export default function FeatureGrid() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-ss-blgr">
+          <h2 className="text-lg font-semibold leading-7 text-ss-blgr">
             Testing in Production with SmoothSail
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-ss-bl sm:text-4xl">
             Leverage the advantages of Feature Flags
           </p>
           <p className="mt-6 text-lg leading-8 text-ss-bl">
-            Feature flags give engineers many advantages and helps explain their
-            rise in popularity. There are some key benefits that make feature
-            flags great for feature release and testing in production.
+            Feature flags offer numerous advantages, contributing to their
+            increasing popularity. Some advantages of feature flags for feature
+            release and production testing include:
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

@@ -11,6 +11,7 @@ import {
   LightBulbIcon,
 } from "@heroicons/react/24/outline";
 import { HashLink } from "react-router-hash-link";
+import scrollWithOffset from "../utils/scrollWithOffset";
 
 const navigation = [
   { name: "Introduction", href: "#introduction", icon: HomeIcon },
@@ -48,6 +49,7 @@ export default function Sidebar() {
         {navigation.map((item) => (
           <li key={item.name}>
             <HashLink
+              scroll={(el) => scrollWithOffset(el)}
               to={item.href}
               className={
                 "text-ss-bl hover:text-ss-blgr-hover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-md leading-6 font-semibold"

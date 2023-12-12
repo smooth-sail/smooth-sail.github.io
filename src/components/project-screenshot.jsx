@@ -6,7 +6,7 @@ import {
 
 const features = [
   {
-    name: "Decouple Deployment from Release",
+    name: "Decouple Deployment and Release",
     description:
       "Release new features to users when the engineering team is ready",
     icon: ServerStackIcon,
@@ -32,7 +32,7 @@ export default function ProjectScreenShot() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-ss-blgr">
+              <h2 className="text-lg font-semibold leading-7 text-ss-blgr">
                 Feature Release with SmoothSail
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-ss-bl sm:text-4xl">
