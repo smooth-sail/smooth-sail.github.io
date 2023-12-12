@@ -6,7 +6,7 @@ import WelcomeSection from "./welcome-section";
 export default function Home() {
   const title = "Feature Flag Software Made For Engineers";
   const subtitle =
-    "Open-source, Self-Hosted feature flag software that enables developers to release new features independently of deployment";
+    "An open-source, self-hosted feature flagging solution that empowers developers to independently release new features without being tied to deployment.";
   const button = "Read Case Study";
   const buttonPath = "#/case-study";
 

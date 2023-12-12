@@ -45,7 +45,7 @@ export default function CaseStudy() {
             <img
               src="images/intro1.png"
               alt="intro"
-              className="overflow-auto"
+              className="overflow-auto "
             />
           </p>
           <div className="border-b border-ss-coral pb-5">
@@ -79,7 +79,7 @@ export default function CaseStudy() {
             <img
               src="images/featureDeployAndRelease.png"
               alt="featureDeployAndRelease"
-              className="overflow-auto"
+              className="overflow-auto "
             />
           </p>
           <p className="p-5 text-ss-bl text-xl">
