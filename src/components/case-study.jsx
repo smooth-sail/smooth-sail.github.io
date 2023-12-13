@@ -26,11 +26,10 @@ export default function CaseStudy() {
 
       <div className="lg:ml-40 p-10">
         <div className="mx-auto max-w-4xl sm:px-6 lg:px-8">
-          <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold text-ss-bl p-5">
-              <a id="introduction">Introduction</a>
-            </h3>
-          </div>
+          <h3 className="text-4xl font-semibold text-ss-bl p-5">
+            <a id="introduction">Introduction</a>
+          </h3>
+
           <p className="p-5 text-ss-bl text-xl">
             SmoothSail is a self-hosted, open-source feature flag tool designed
             for small companies aiming for rapid feature development with
@@ -48,11 +47,10 @@ export default function CaseStudy() {
               className="overflow-auto "
             />
           </p>
-          <div className="border-b border-ss-coral pb-5">
-            <h3 className="text-4xl font-semibold text-ss-bl p-5">
-              <a id="deployment-release">Deployment and Release</a>
-            </h3>
-          </div>
+          <div className="border-b border-ss-coral pb-5"></div>
+          <h3 className="text-4xl font-semibold text-ss-bl p-5">
+            <a id="deployment-release">Deployment and Release</a>
+          </h3>
           <h4 className="text-2xl font-semibold  text-ss-bl p-5">
             Feature Deployment and Release
           </h4>
@@ -183,13 +181,13 @@ export default function CaseStudy() {
             of users impacted by unforeseen bugs in production code. This
             approach is called <strong>feature flags.</strong>
           </p>
-          <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold text-ss-bl p-5">
-              <a id="feature-flags">
-                Feature Flags: Decoupling Feature Deployment and Release
-              </a>
-            </h3>
-          </div>
+          <div className="border-b border-ss-coral pb-5 pt-10"></div>
+          <h3 className="text-4xl font-semibold text-ss-bl p-5">
+            <a id="feature-flags">
+              Feature Flags: Decoupling Feature Deployment and Release
+            </a>
+          </h3>
+
           <h4 className="text-2xl font-semibold text-ss-bl p-5">
             What is a Feature Flag?
           </h4>
@@ -454,11 +452,11 @@ export default function CaseStudy() {
             require significant resources, potentially making this path less
             appealing or even unfeasible.
           </p>
-          <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold text-ss-bl p-5">
-              <a id="smoothsail">SmoothSail</a>
-            </h3>
-          </div>
+          <div className="border-b border-ss-coral pb-5 pt-10"></div>
+          <h3 className="text-4xl font-semibold text-ss-bl p-5">
+            <a id="smoothsail">SmoothSail</a>
+          </h3>
+
           <p className="p-5 text-ss-bl text-xl">
             SmoothSail is a self-hosted, open-source feature flag software that
             enables developer teams to release new features independently of
@@ -484,11 +482,11 @@ export default function CaseStudy() {
               className="overflow-auto"
             />
           </p>
-          <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold text-ss-bl p-5">
-              <a id="architecture">Architecture</a>
-            </h3>
-          </div>
+          <div className="border-b border-ss-coral pb-5 pt-10"></div>
+          <h3 className="text-4xl font-semibold text-ss-bl p-5">
+            <a id="architecture">Architecture</a>
+          </h3>
+
           <p className="p-5 text-ss-bl text-xl">
             We designed SmoothSail with reliability and consistency in mind. It
             was essential to ensure that when a user changes a feature flag,
@@ -811,11 +809,11 @@ export default function CaseStudy() {
               className="overflow-auto"
             />
           </p>
-          <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold  text-ss-bl p-5">
-              <a id="engineering-decisions">Engineering Decisions</a>
-            </h3>
-          </div>
+          <div className="border-b border-ss-coral pb-5 pt-10"></div>
+          <h3 className="text-4xl font-semibold  text-ss-bl p-5">
+            <a id="engineering-decisions">Engineering Decisions</a>
+          </h3>
+
           <h4 className="text-2xl font-semibold  text-ss-bl p-5">
             Communication between the Manager Server and the PostgresSQL
             database
@@ -1110,11 +1108,11 @@ export default function CaseStudy() {
               className="overflow-auto"
             />
           </p>
-          <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold  text-ss-bl p-5">
-              <a id="load-testing">Load Testing</a>
-            </h3>
-          </div>
+          <div className="border-b border-ss-coral pb-5 pt-10"></div>
+          <h3 className="text-4xl font-semibold  text-ss-bl p-5">
+            <a id="load-testing">Load Testing</a>
+          </h3>
+
           <p className="p-5 text-ss-bl text-xl">
             Our team set out to identify the performance threshold where
             SmoothSail starts to show signs of decline as the user load
@@ -1146,11 +1144,11 @@ export default function CaseStudy() {
             effectively. Overall, our load testing affirms that SmoothSail is
             robust enough to reliably accommodate the expected user loads.
           </p>
-          <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold  text-ss-bl p-5">
-              <a id="using-smoothsail">Using SmoothSail</a>
-            </h3>
-          </div>
+          <div className="border-b border-ss-coral pb-5 pt-10"></div>
+          <h3 className="text-4xl font-semibold  text-ss-bl p-5">
+            <a id="using-smoothsail">Using SmoothSail</a>
+          </h3>
+
           <h4 className="text-2xl font-semibold text-ss-bl p-5">Design</h4>
           <p className="p-5 text-ss-bl text-xl">
             A <strong>flag</strong> is a fundamental entity in SmoothSail,
@@ -1322,11 +1320,11 @@ export default function CaseStudy() {
             functionality. We provide comprehensive documentation to guide
             developers on effectively running each component.
           </p>
-          <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold text-ss-bl p-5">
-              <a id="future-plans">Future Plans</a>
-            </h3>
-          </div>
+          <div className="border-b border-ss-coral pb-5 pt-10"></div>
+          <h3 className="text-4xl font-semibold text-ss-bl p-5">
+            <a id="future-plans">Future Plans</a>
+          </h3>
+
           <p className="p-5 text-ss-bl text-xl">
             In summary, SmoothSail is a lightweight, scalable, self-hosted
             feature flag tool that empowers developer teams to release and roll
@@ -1375,11 +1373,10 @@ export default function CaseStudy() {
             </li>
           </ul>
 
-          <div className="border-b border-ss-coral pb-5 pt-10">
-            <h3 className="text-4xl font-semibold text-ss-bl p-5">
-              <a id="references">References</a>
-            </h3>
-          </div>
+          <div className="border-b border-ss-coral pb-5 pt-10"></div>
+          <h3 className="text-4xl font-semibold text-ss-bl p-5">
+            <a id="references">References</a>
+          </h3>
 
           <ol className="p-5 text-ss-bl text-xl">
             <li className="list-decimal ml-10 p-2">
@@ -1442,11 +1439,10 @@ export default function CaseStudy() {
             <li className="list-decimal ml-10 p-2">
               <a id="reference-10">WebSockets vs SSE Scalability: </a>
               <a href="https://qalbit.com/blog/an-in-depth-look-at-websockets-and-server-sent-events/#:~:text=Scalability%20of%20both%20communication%20methods,and%20scaling%20across%20multiple%20servers">
-                https://qalbit.com/blog/an-in-depth-look-at-websockets-and-server-sent-events/#:~:text=Scalability%20of%20both%20communication%20methods,and%20scaling%20across%20multiple%20servers
+                https://qalbit.com/blog/an-in-depth-look-at-websockets-and-server-sent-events/
               </a>
             </li>
           </ol>
-          <div className="border-b border-ss-coral pb-5 pt-10"></div>
         </div>
       </div>
     </>
