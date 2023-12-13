@@ -25,7 +25,7 @@ export default function CaseStudy() {
       </div>
 
       <div className="lg:ml-40 p-10">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl sm:px-6 lg:px-8">
           <div className="border-b border-ss-coral pb-5 pt-10">
             <h3 className="text-4xl font-semibold text-ss-bl p-5">
               <a id="introduction">Introduction</a>
@@ -77,7 +77,7 @@ export default function CaseStudy() {
           </p>
           <p className="flex justify-center pb-5">
             <img
-              src="images/featureDeployAndRelease.png"
+              src="images/deploy-dark.png"
               alt="featureDeployAndRelease"
               className="overflow-auto "
             />
