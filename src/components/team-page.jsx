@@ -148,7 +148,7 @@ export default function TeamPage() {
 
                 <ul role="list" className="flex flex-wrap">
                   {people.map((person) => (
-                    <li key={person.name} className="px-20 py-10">
+                    <li key={person.name} className="px-10 py-10">
                       <div className="flex flex-col items-center gap-x-6">
                         <img
                           className="h-60 w-auto rounded-full"
