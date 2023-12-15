@@ -32,7 +32,7 @@ const people = [
   {
     name: "Isaac Lee",
     location: "Los Angeles, CA",
-    imageUrl: "images/isaac-lee.png",
+    imageUrl: "images/isaaclee.png",
     email: "lee.isaacy@gmail.com",
     site: "https://isaacylee.github.io",
     linkedin: "https://www.linkedin.com/in/isaac-lee-2132709a/",
