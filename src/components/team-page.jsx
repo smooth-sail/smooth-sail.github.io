@@ -34,7 +34,8 @@ const people = [
   {
     name: "Dariia Vyshenska",
     location: "Seattle, WA",
-    imageUrl: "images/dariia-vyshenska.png",
+    imageUrl:
+      "https://live.staticflickr.com/65535/53399886036_469462b2cf_w.jpg",
     email: "dariia.vyshenska@gmail.com",
     site: "https://dariiavyshenska.github.io/",
     linkedin: "https://www.linkedin.com/in/dariia-vyshenska/",
