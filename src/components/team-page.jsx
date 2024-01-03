@@ -17,7 +17,7 @@ const navigation = [
 const people = [
   {
     name: "Emily Olszewski",
-    location: "Tucson, AZ",
+    location: "Chicago, IL",
     imageUrl: "images/emily-olszewski.png",
     email: "eolszewski14@gmail.com",
     site: "https://emilyolszewski.dev/",
