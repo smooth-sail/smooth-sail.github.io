@@ -7,7 +7,7 @@ import {
 const people = [
   {
     name: "Emily Olszewski",
-    location: "Chicago, IL",
+    location: "Seattle, WA",
     imageUrl: "images/emily-olszewski.png",
     email: "eolszewski14@gmail.com",
     site: "https://emilyolszewski.dev/",
