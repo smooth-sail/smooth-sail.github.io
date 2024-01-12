@@ -61,7 +61,7 @@ export default function TeamPage() {
           <div className="flex grow flex-col gap-y-5 overflow-y-auto fixed top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-ss-bl from-30% via-[#365A8F] via-60% to-[#406AA8] to-90% px-6 pb-4">
             <header className="fixed inset-x-0 top-0 z-50">
               <nav
-                className="flex items-center justify-between lg:px-8 bg-ss-bl"
+                className="flex items-center justify-between pr-4 lg:px-8 bg-ss-bl"
                 aria-label="Global"
               >
                 <div className="flex lg:flex-1">
@@ -147,7 +147,7 @@ export default function TeamPage() {
                   {title}
                 </h1>
 
-                <ul role="list" className="flex flex-wrap">
+                <ul role="list" className="md:grid grid-cols-2 xl:grid-cols-4">
                   {people.map((person) => (
                     <li key={person.name} className="px-10 py-10">
                       <div className="flex flex-col items-center gap-x-6">

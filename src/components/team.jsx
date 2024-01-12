@@ -58,7 +58,7 @@ export default function TeamGrid() {
             <li key={person.name}>
               <div className="flex items-center gap-x-6">
                 <img
-                  className="h-60 w-auto rounded-full"
+                  className="h-40 lg:h-60 w-auto rounded-full"
                   src={person.imageUrl}
                   alt=""
                 />

@@ -22,7 +22,7 @@ export default function WelcomeSection({
       <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gradient-to-b from-ss-bl from-30% via-[#365A8F] via-60% to-[#406AA8] to-90% px-6 pb-4">
         <header className="fixed inset-x-0 top-0 z-50">
           <nav
-            className="flex items-center justify-between lg:px-8 bg-ss-bl"
+            className="flex items-center justify-between pr-4 lg:px-8 bg-ss-bl"
             aria-label="Global"
           >
             <div className="flex lg:flex-1">

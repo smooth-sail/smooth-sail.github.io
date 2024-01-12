@@ -1378,7 +1378,7 @@ export default function CaseStudy() {
             <a id="references">References</a>
           </h3>
 
-          <ol className="p-5 text-ss-bl text-xl">
+          <ol className="p-5 text-ss-bl text-xl break-words">
             <li className="list-decimal ml-10 p-2">
               <a id="reference-1">Blue-green and Canary: </a>
               <a href="https://www.informit.com/articles/article.aspx?p=1833567&seqNum=2">
