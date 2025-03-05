@@ -18,7 +18,7 @@ const people = [
     location: "Las Vegas, NV",
     imageUrl: "images/bradley-taylor.png",
     email: "taylorbradleyr@gmail.com",
-    site: "https://brad-taylor.com",
+    site: "https://bradtaylor.codes",
     linkedin: "https://www.linkedin.com/in/bradleyroberttaylor/",
   },
   {
